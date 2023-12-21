@@ -1,0 +1,14 @@
+/* font-family: 'Montserrat', sans-serif;*/
+:root {
+  --color1: #A6BC09;
+  --color2: #01415B;
+  --color3: #005148;
+  --color4: #019587;
+  --color5: #CCEA8D;
+  --font-family: 'Montserrat', sans-serif;
+}
+body {
+  background-color: #01415B;
+  color: #A6BC09;
+  font-family: var(--font-family);
+}

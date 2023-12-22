@@ -1,0 +1,92 @@
+/* font-family: 'Montserrat', sans-serif;*/
+:root {
+  --color1: #d6ef16;
+  --color2: #01415B;
+  --color3: #005148;
+  --color4: #019587;
+  --color5: #CCEA8D;
+  --font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+.first-section {
+  background: linear-gradient(110deg, #019587 57%, #ccf381 33%);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  font-size: 20px;
+}
+
+.logo a {
+  color: var(--color1);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  text-decoration: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--color2);
+  font-weight: 600;
+}
+
+.body-container {
+  width: 100vw;
+} 
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 40px;
+}
+
+.hero {
+  width: 70vw;
+}
+
+.hero h2 {
+  font-size: 20px;
+  padding-bottom: 25px;
+}
+
+.hero h1 {
+  font-size: 90px;
+  font-weight: 900;
+  color: var(--color1);
+}
+
+.hero p {
+  font-size: 25px;
+  padding-top: 15px;
+}
+
+.button a {
+  text-decoration: none;
+  font-size: 22px;
+  background-color: var(--color2);
+  padding: 20px;
+  border-radius: 6px;
+  color: var(--color5);
+}
+
+.button {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding-top: 70px;
+}

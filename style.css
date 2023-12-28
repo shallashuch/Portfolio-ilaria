@@ -1,4 +1,3 @@
-/* font-family: 'Montserrat', sans-serif;*/
 :root {
   --color1: #d6ef16;
   --color2: #01415B;
@@ -13,6 +12,10 @@ body {
   font-family: var(--font-family);
 }
 
+.body-container {
+  width: 100vw;
+} 
+
 #presentation-section {
   background: linear-gradient(110deg, #019587 57%, #ccf381 33%);
 }
@@ -20,7 +23,7 @@ body {
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  padding: 15px 20px;
+  padding: 5px 20px;
   font-size: 20px;
 }
 
@@ -30,26 +33,26 @@ body {
   font-weight: 600;
 }
 
-.menu {
+.menu-items {
   display: flex;
-  justify-content: space-around;
-  width: 30%;
-  text-decoration: none;
+  justify-content: space-between;
+  width: 33%;
 }
 
-.menu a {
+.menu-items a {
   text-decoration: none;
   color: var(--color2);
   font-weight: 600;
+  display: block;
 }
 
-.menu .icon {
+.icon-open {
   display: none;
 }
 
-.body-container {
-  width: 100vw;
-} 
+.icon-close {
+  display: none;
+}
 
 .hero-container {
   display: flex;
@@ -63,20 +66,27 @@ body {
   width: 70vw;
 }
 
-.hero h2 {
-  font-size: 20px;
-  padding-bottom: 25px;
-}
-
 .hero h1 {
   font-size: 90px;
   font-weight: 900;
   color: var(--color1);
 }
 
+.hero h2 {
+  font-size: 20px;
+  padding-bottom: 25px;
+}
+
 .hero p {
   font-size: 25px;
   padding-top: 15px;
+}
+
+.button {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding-top: 70px;
 }
 
 .button a {
@@ -86,13 +96,6 @@ body {
   padding: 20px;
   border-radius: 6px;
   color: var(--color5);
-}
-
-.button {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  padding-top: 70px;
 }
 
 #project-section {
@@ -114,49 +117,171 @@ body {
 }
 
 #project-section .container .row .button a {
-  text-decoration: none;
   font-size: 18px;
-  background-color: var(--color2);
   padding: 15px;
-  border-radius: 6px;
-  color: var(--color5);
 }
 
-@media screen and (min-width: 701) {
+@media (max-width: 700px) {
+
   .navbar-container {
-    display: flex;
-    justify-content: space-between;
+    position:relative;
+  } 
+
+ .menu-items {
+  text-align:end;
+  transform: translate(250px, 50px);
+  }
+
+  .active {
+    display: block;
+    transform: translate(-10px, 50px);
+    transition: transform 0.5s ease-in;
+  }
+
+  .inactive {
+    display: block;
+    transform: translate(250px, 50px);
+    transition: transform 0.5s ease-in;
+  }
+
+  .navbar-container a.icon-open {
+    display: block;
+    position:absolute;
+    right: 30px;
+    top: 0;
+    color: var(--color2);
+  }
+
+  .navbar-container a.icon-close {
+    position:absolute;
+    right: 30px;
+    top: 0;
+    color: var(--color2);
+  }
+
+  .hero h2 {
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+  
+  .hero h1 {
+    font-size: 50px;
+  }
+  
+  .hero p {
+    font-size: 15px;
+  }
+  
+  .button a {
+    font-size: 15px;
+  }
+  
+  .button {
+    padding-top: 20px;
+  }
+
+  .navbar-container {
+    font-size: 15px;
+  }
+  .icon-open, .icon-close {
+    font-size:25px;
+    color: var(--color2);
+  }
+}
+
+@media (min-width: 701px) and (max-width: 960px) {
+  .navbar-container {
     padding: 5px 10px;
-    font-size: 10px;
+    font-size: 20px;
   }
   
   .logo a {
-    color: var(--color1);
-    text-decoration: none;
-    font-weight: 600;
+    font-weight:700;
   }
   
-  .menu {
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
+  .menu-items {
+    width: 60%;
     text-decoration: none;
   }
   
-  .menu a {
-    text-decoration: none;
-    color: var(--color2);
-    font-weight: 600;
+  .menu-items a {
+    font-weight: 700;
+  }
+
+.icon-close, .icon-open {
+    display: none;
+  } 
+}
+
+@media (min-width: 701px) and (max-width: 850px) {
+  .hero h2 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 70px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+  }
+  
+  .button a {
+    font-size: 18px;
+  }
+  
+  .button {
+    padding-top: 30px;
   }
 }
 
-@media screen and (max-width: 700px) {
-  .menu a {
-    display: none;
+@media (min-width: 961px) and (max-width: 1300px) {
+  .navbar-container {
+    padding: 5px 10px;
+    font-size: 20px;
+  }
+  
+  .logo a {
+    font-weight:700;
+  }
+  
+  .menu-items {
+    width: 40%;
+    text-decoration: none;
+  }
+  
+  .menu-items a {
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 991px) {
+  #project-section {
+    text-align: center;
   }
 
-  .menu a.icon {
-    float: right;
-    display: block;
+  #project-section h2{
+    font-weight: 100;
+  }
+
+  #project-section .container .row h3 {
+    font-size: 35px;
+    padding-bottom: 20px;
+  }
+
+  #project-section .container .row .button a {
+    font-size: 15px;
+  }
+
+  #project-section .container .row .button {
+    padding-top: 10px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .hero h1 {
+    color: var(--color2);
   }
 }

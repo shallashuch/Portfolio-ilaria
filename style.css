@@ -254,6 +254,11 @@ body {
   .menu-items a {
     font-weight: 700;
   }
+
+  .icon-close, .icon-open {
+    display: none;
+  } 
+
 }
 
 @media (max-width: 991px) {

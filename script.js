@@ -2,7 +2,7 @@ let openButton = document.querySelector('.icon-open');
 let closeButton = document.querySelector('.icon-close');
 let menu = document.querySelector('.menu-items');
 let inactive = document.querySelector('.inactive');
-let maxWidth = 700;
+// let maxWidth = 700;
 
 openButton.addEventListener('click', displayMenu);
 closeButton.addEventListener('click', closeMenu);
@@ -23,17 +23,18 @@ function closeMenu (callback) {
   callback();
 }
 
-closeMenu(function() {
-  window.addEventListener('resize', function () {
-    var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    if (windowWidth > maxWidth) {
-      openButton.style.display = 'none';
-      menu.classList.remove('inactive');
-    } else {
-      openButton.style.display = 'block';
-    }
-  })
-})
+function checkWindowWidth() {
+  var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  var maxWidth = 700;
 
+  if (windowWidth > maxWidth) {
+    openButton.style.display = 'none';
+    menu.classList.remove('inactive');
+  } else {
+    openButton.style.display = 'block';
+  }
+}
 
+window.addEventListener('load', checkWindowWidth);
+window.addEventListener('resize', checkWindowWidth);
 

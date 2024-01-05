@@ -296,24 +296,36 @@ align-items: center;
   background: linear-gradient(to right, var(--color4), var(--color3), var(--color2));
 }
 
-.socials {
+.social-container {
   background: linear-gradient(20deg, #019587 57%, #ccf381 33%);
   padding: 60px 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.socials a svg {
-  color: var(--color1);
+  text-align: center;
 }
 
 #linkedin {
   margin-right: 30px;
+  color: var(--color1);
 }
 
 #github {
-  margin-left: 30px;
+  margin-left: 50px;
+  color: var(--color2);
+}
+
+.social-container .opensource {
+  padding-top: 30px;
+  color: var(--color2);
+  font-weight: bold;
+}
+
+.social-container .opensource a {
+  text-decoration: none;
+  color: var(--color2);
+}
+
+.social-container .opensource a:hover {
+  text-decoration: none;
+  color: var(--color3);
 }
 
 @media (max-width: 700px) {
@@ -402,6 +414,10 @@ align-items: center;
 
   #footer-button a {
     font-size: 12px;
+  }
+
+  #linkedin {
+    color: var(--color2);
   }
 }
 

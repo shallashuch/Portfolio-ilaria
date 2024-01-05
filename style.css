@@ -24,14 +24,19 @@ body {
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  padding: 5px 20px;
+  padding: 20px 20px 0px 20px;
   font-size: 20px;
 }
 
-.logo a {
-  color: var(--color1);
-  text-decoration: none;
-  font-weight: 600;
+.navbar-container .logo {
+  height: 50px;
+  width: 100px;
+}
+
+.logo a img {
+ height: 100%;
+ width: 100%;
+ object-fit: contain;
 }
 
 .menu-items {
@@ -88,6 +93,11 @@ body {
   text-align: center;
   align-items: center;
   padding-top: 70px;
+  cursor: pointer;  
+}
+
+.button:hover a {
+  background: linear-gradient(to right, var(--color1), var(--color4), var(--color3), var(--color2));
 }
 
 .button a {
@@ -96,7 +106,7 @@ body {
   background-color: var(--color2);
   padding: 20px;
   border-radius: 6px;
-  color: var(--color5);
+  color: var(--background);
 }
 
 #project-section {
@@ -111,8 +121,7 @@ body {
 }
 
 #project-section .container .row h3 {
-  color: var(--color1);
-  text-shadow: 4px 4px 2px var(--color2);
+  color: var(--color4);
   font-weight: 700;
   padding-bottom: 40px;
 }
@@ -134,6 +143,12 @@ body {
   padding: 150px 60px;
 }
 
+.about-container span {
+  background: linear-gradient(to right, var(--color1), var(--color5), var(--color4), var(--color3), var(--color2));
+  -webkit-background-clip: text; /* Clip the background to the text */
+  color: transparent;
+}
+
 .about-text h1,
 .work-container h1,
 .contact-container h1 {
@@ -144,7 +159,7 @@ body {
 }
 
 .about-text h3,
-.work-container h3
+.work-container h3,
 .contact-container h3 {
   font-size: 20px;
   font-weight: bold;
@@ -159,6 +174,12 @@ body {
 .about-photo {
   position: relative;
   padding: 0;
+}
+
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 
 .portfolio-overlay {
@@ -176,12 +197,6 @@ body {
 .portfolio-overlay:hover {
     opacity: .8;
   }
-
-.about-photo img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
 
 /* WORK PAGE */
 
@@ -208,6 +223,7 @@ body {
 .work-container h3,
 .contact-container h3 {
   padding: 25px 0 10px 0;
+  color: var(--color4);
 }
 
 .project-container .row {
@@ -240,21 +256,76 @@ body {
   text-decoration: none;
 }
 
+/* Footer */
 
+.email-container {
+background-color: var(--background);
+padding: 0px 0px 150px 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
+.getintouch {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgba(214, 239, 22, 0.3);
+}
 
+#footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--color3);
+}
 
+#footer-text h2 {
+  font-weight: bold;
+}
 
+#footer-button {
+  padding: 0;
+}
 
+#footer-button:hover a {
+  background: linear-gradient(to right, var(--color4), var(--color3), var(--color2));
+}
 
+.socials {
+  background: linear-gradient(20deg, #019587 57%, #ccf381 33%);
+  padding: 60px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.socials a svg {
+  color: var(--color1);
+}
 
+#linkedin {
+  margin-right: 30px;
+}
+
+#github {
+  margin-left: 30px;
+}
 
 @media (max-width: 700px) {
 
   .navbar-container {
     position:relative;
   } 
+
+  .navbar-container .logo {
+    height: 30px;
+    width: 50px;
+  }
 
  .menu-items {
   text-align:end;
@@ -316,6 +387,22 @@ body {
     font-size:25px;
     color: var(--color2);
   }
+
+  #footer-text h2 {
+    font-size:20px;
+  }
+
+  #footer-text p {
+    font-size:12px;
+  }
+
+  #footer-button {
+    padding-top: 3x;
+  }
+
+  #footer-button a {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -338,10 +425,6 @@ body {
     font-size: 20px;
   }
   
-  .logo a {
-    font-weight:700;
-  }
-  
   .menu-items {
     width: 60%;
     text-decoration: none;
@@ -351,12 +434,18 @@ body {
     font-weight: 700;
   }
 
-.icon-close, .icon-open {
+  .icon-close, .icon-open {
     display: none;
   } 
 }
 
 @media (min-width: 701px) and (max-width: 850px) {
+  
+  .navbar-container .logo {
+    height: 50px;
+    width: 80px;
+  }
+  
   .hero h2 {
     font-size: 20px;
     padding-bottom: 20px;
@@ -377,16 +466,20 @@ body {
   .button {
     padding-top: 30px;
   }
+
+  #footer-text h2 {
+    font-size:25px;
+  }
+
+  #footer-text p {
+    font-size:15px;
+  }
 }
 
 @media (min-width: 961px) and (max-width: 1300px) {
   .navbar-container {
     padding: 5px 10px;
     font-size: 20px;
-  }
-  
-  .logo a {
-    font-weight:700;
   }
   
   .menu-items {

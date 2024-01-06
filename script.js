@@ -8,6 +8,7 @@ window.addEventListener('load', checkWindowWidth);
 window.addEventListener('resize', checkWindowWidth);
 
 function displayMenu () {
+  menu.classList.remove('menu-items');
   openButton.style.display = 'none';
   closeButton.style.display = 'block';
   menu.classList.remove('inactive');

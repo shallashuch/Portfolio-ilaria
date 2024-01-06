@@ -1,7 +1,6 @@
 let openButton = document.querySelector('.icon-open');
 let closeButton = document.querySelector('.icon-close');
 let menu = document.querySelector('.menu-items');
-let inactive = document.querySelector('.inactive');
 
 openButton.addEventListener('click', displayMenu);
 closeButton.addEventListener('click', closeMenu);
@@ -20,10 +19,6 @@ function closeMenu (callback) {
   openButton.style.display = 'block';
   menu.classList.remove('active');
   menu.classList.add('inactive');
-  setTimeout(() => {
-    menu.classList.remove('inactive');
-    menu.classList.add('none');
-  }, 300);
 }
 
 function checkWindowWidth() {

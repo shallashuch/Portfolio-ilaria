@@ -418,7 +418,7 @@ margin-bottom: 100px;
  .menu-items {
   text-align:end;
   transform: translate(250px, 50px);
-  display: block;
+  display: none;
   }
 
   .active {

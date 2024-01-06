@@ -30,6 +30,7 @@ function checkWindowWidth() {
   if (windowWidth > maxWidth) {
     openButton.style.display = 'none';
     menu.classList.remove('inactive');
+    menu.classList.add('none');
   } else {
     openButton.style.display = 'block';
   }

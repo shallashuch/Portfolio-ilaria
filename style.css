@@ -418,7 +418,11 @@ margin-bottom: 100px;
  .menu-items {
   text-align:end;
   transform: translate(250px, 50px);
-  display: none;
+  display: block;
+  }
+
+  .none {
+    display: none;
   }
 
   .active {
@@ -428,7 +432,7 @@ margin-bottom: 100px;
   }
 
   .inactive {
-    display: none;
+    display: block;
     transform: translate(250px, 50px);
     transition: transform 0.5s ease-in;
   }

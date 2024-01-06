@@ -2,10 +2,11 @@ let openButton = document.querySelector('.icon-open');
 let closeButton = document.querySelector('.icon-close');
 let menu = document.querySelector('.menu-items');
 let inactive = document.querySelector('.inactive');
-// let maxWidth = 700;
 
 openButton.addEventListener('click', displayMenu);
 closeButton.addEventListener('click', closeMenu);
+window.addEventListener('load', checkWindowWidth);
+window.addEventListener('resize', checkWindowWidth);
 
 function displayMenu () {
   openButton.style.display = 'none';
@@ -19,8 +20,10 @@ function closeMenu (callback) {
   openButton.style.display = 'block';
   menu.classList.remove('active');
   menu.classList.add('inactive');
-
-  callback();
+  setTimeout(() => {
+    menu.classList.remove('inactive');
+    menu.classList.add('none');
+  }, 300);
 }
 
 function checkWindowWidth() {
@@ -30,12 +33,8 @@ function checkWindowWidth() {
   if (windowWidth > maxWidth) {
     openButton.style.display = 'none';
     menu.classList.remove('inactive');
-    menu.classList.add('none');
   } else {
     openButton.style.display = 'block';
   }
 }
-
-window.addEventListener('load', checkWindowWidth);
-window.addEventListener('resize', checkWindowWidth);
 

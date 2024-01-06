@@ -421,10 +421,6 @@ margin-bottom: 100px;
   display: block;
   }
 
-  .none {
-    display: none;
-  }
-
   .active {
     display: block;
     transform: translate(-10px, 50px);

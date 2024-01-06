@@ -19,6 +19,11 @@ function closeMenu (callback) {
   openButton.style.display = 'block';
   menu.classList.remove('active');
   menu.classList.add('inactive');
+
+  setTimeout(() => {
+    menu.classList.remove('inactive');
+    menu.classList.add('menu-items');
+  }, 300);
 }
 
 function checkWindowWidth() {

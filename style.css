@@ -513,6 +513,20 @@ margin-bottom: 100px;
   }
 }
 
+@media (max-width: 400px) {
+  #footer-button {
+    margin: 20px;
+  }
+
+  #footer-text {
+    margin:20px;
+  }
+
+  #footer-text h2 {
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 767px) {
 
   /* work */

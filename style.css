@@ -134,9 +134,9 @@ body {
 
 /* ABOUT PAGE */
 
-#about-body {
-  height: 100vh;
+.about-body-container {
   width: 100vw;
+  overflow: hidden;
   background-color: var(--background);
 }
 
@@ -209,11 +209,11 @@ body {
 
 /* WORK PAGE */
 
-#work-body {
-  height: 100vh;
+.work-body-container {
   width: 100vw;
+  overflow: hidden;
   background-color: var(--background);
-} 
+}
 
 .work-container {
   margin: 150px 60px;
@@ -253,9 +253,9 @@ body {
 
 /* CONTACT PAGE */
 
-#contact-body {
-  height: 100vh;
+.contact-body-container {
   width: 100vw;
+  overflow: hidden;
   background-color: var(--background);
 }
 
@@ -406,9 +406,9 @@ margin-bottom: 100px;
 @media (max-width: 400px) {
   
   .body-container,
-  #about-body,
-  #contact-body,
-  #work-body {
+  .about-body-container,
+  .contact-body-container,
+  .work-body-container {
     overflow: hidden;
   } 
 
@@ -430,7 +430,7 @@ margin-bottom: 100px;
 }
 
 @media (max-width: 530px) {
-  #about-body .about-container {
+  .about-body-container .about-container {
     padding-top: 100px;
   }
   
@@ -441,9 +441,9 @@ margin-bottom: 100px;
   /* navbar */
 
   .body-container,
-  #about-body,
-  #contact-body,
-  #work-body {
+  .about-body-container,
+  .contact-body-container,
+  .work-body-container {
     overflow: hidden;
   } 
 

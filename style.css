@@ -405,7 +405,10 @@ margin-bottom: 100px;
 
 @media (max-width: 400px) {
   
-  .body-container {
+  .body-container,
+  #about-body,
+  #contact-body,
+  #work-body {
     overflow: hidden;
   } 
 
@@ -426,11 +429,21 @@ margin-bottom: 100px;
   }
 }
 
+@media (max-width: 530px) {
+  #about-body .about-container {
+    padding-top: 100px;
+  }
+  
+}
+
 @media (max-width: 700px) {
 
   /* navbar */
 
-  .body-container {
+  .body-container,
+  #about-body,
+  #contact-body,
+  #work-body {
     overflow: hidden;
   } 
 
@@ -447,7 +460,7 @@ margin-bottom: 100px;
 
  .menu-items {
   text-align:end;
-  transform: translate(250px, 50px);
+  /* transform: translate(250px, 50px); */
   display: none;
   }
 
@@ -585,6 +598,11 @@ margin-bottom: 100px;
     height: 50px;
     width: 80px;
   }
+
+  .icon-close, 
+  .icon-open {
+    display: none;
+  } 
   
   /* index */
   .hero h2 {
@@ -726,6 +744,11 @@ margin-bottom: 100px;
   .portfolio-overlay {
     height: 100%;
     width: 100%;
+  } 
+
+  .icon-close, 
+  .icon-open {
+    display: none;
   } 
 }
 

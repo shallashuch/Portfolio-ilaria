@@ -46,6 +46,14 @@
   display: none;
 }
 
+.show-button {
+  display: block;
+}
+
+.hide-button {
+  display: none;
+}
+
 /* index */
 body {
   box-sizing: border-box;

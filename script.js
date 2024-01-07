@@ -14,6 +14,8 @@ function displayMenu () {
   openButton.classList.add('hide-button');
   closeButton.classList.remove('hide-button');
   closeButton.classList.add('show-button');
+  menu.classList.remove('beginning');
+  menu.classList.add('inactive');
   menu.classList.remove('inactive');
   menu.classList.add('active');
 };
@@ -27,3 +29,15 @@ function closeMenu () {
   menu.classList.add('inactive');
 }
 
+function checkWindowWidth() {
+  var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  var maxWidth = 700;
+
+  if (windowWidth > maxWidth) {
+    menu.classList.remove('inactive');
+    menu.classList.add('beginning');
+  } else {
+    menu.classList.add('inactive');
+    menu.classList.remove('beginning');
+  }
+}

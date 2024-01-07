@@ -10,29 +10,20 @@ window.addEventListener('load', checkWindowWidth);
 window.addEventListener('resize', checkWindowWidth);
 
 function displayMenu () {
-  openButton.style.display = 'none';
-  closeButton.style.display = 'block';
+  openButton.classList.remove('icon-open');
+  openButton.classList.add('hide-button');
+  closeButton.classList.remove('hide-button');
+  closeButton.classList.add('show-button');
   menu.classList.remove('inactive');
   menu.classList.add('active');
 };
 
 function closeMenu () {
-  closeButton.style.display = 'none';
-  openButton.style.display = 'block';
+  closeButton.classList.remove('show-button');
+  openButton.classList.remove('hide-button');
+  closeButton.classList.add('hide-button');
+  openButton.classList.add('icon-open');
   menu.classList.remove('active');
   menu.classList.add('inactive');
-}
-
-function checkWindowWidth() {
-  var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-  var maxWidth = 700;
-
-  if (windowWidth > maxWidth) {
-    openButton.style.display = 'none';
-    closeButton.style.display = 'none';
-    menu.classList.remove('inactive');
-  } else {
-    openButton.style.display = 'block';
-  }
 }
 

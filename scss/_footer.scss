@@ -10,12 +10,13 @@ footer {
     & #linkedin {
       margin-right: 30px;
       color: $colorRed;
-      
+      @include hoverText;
     }
     
     & #github {
       margin-left: 50px;
       color: $colorRed;
+      @include hoverText;
     }
 
     & .opensource {
@@ -25,7 +26,7 @@ footer {
       & a {
         text-decoration: none;
         color: $colorRed;
-        
+        @include hoverText;
       }
     }
   }

@@ -1,12 +1,28 @@
-@import './variables';
-@import './navbar';
-@import './footer';
-
-@mixin hover() {
+@mixin hoverText {
   &:hover {
     color: $colorViolet;
   }
+};
+
+@mixin h1Pages {
+  font-size: 60px;
+  font-weight: 900;
+  color: var(--color2);
+  margin-bottom: 15px;
 }
+
+@mixin h3Pages {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color2);
+  margin-bottom: 25px;
+}
+
+
+@import './variables';
+@import './navbar';
+@import './footer';
+@import './about';
 
 * {
   box-sizing: border-box;
@@ -52,7 +68,7 @@
 
         & span {
           color: $colorRed;
-          @include hover;
+          @include hoverText;
         }
       }
     }

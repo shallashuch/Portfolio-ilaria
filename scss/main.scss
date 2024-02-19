@@ -1,0 +1,60 @@
+@import './variables';
+@import './navbar';
+@import './footer';
+
+@mixin hover() {
+  &:hover {
+    color: $colorViolet;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.body-container {
+  width: 100vw;
+  overflow: hidden;
+  font-family: "Quattrocento", serif;
+}
+
+#presentation-section {
+  background: linear-gradient(110deg,  $colorYellow  67%, $colorBluette 33%);
+
+  & .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 40px;
+
+    & .hero {
+      width: 70vw;
+
+      & h1 {
+        font-size: 90px;
+        font-weight: 900;
+        color: $colorRed;
+        font-family: $fontTitle;
+      }
+
+      & h2 {
+        font-size: 20px;
+        margin-bottom: 25px;
+        font-family: $fontSubTitle;
+      }
+
+      & p {
+        font-size: 25px;
+        margin-top: 15px;
+        font-family: $fontSubTitle;
+
+        & span {
+          color: $colorRed;
+          @include hover;
+        }
+      }
+    }
+  }
+}

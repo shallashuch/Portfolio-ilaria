@@ -4,16 +4,19 @@
   background-color: $colorBackground;
 
   & .myskill-container {
-    margin: 100px 60px;
+    margin: 100px 120px;
     display: flex;
     flex-direction: column;
 
     & h1 {
       @include h1Pages;
-      background: linear-gradient(to right, $colorYellow, $colorRed, $colorViolet, $colorBluette);
-      -webkit-background-clip: text;
-      color: transparent;
-      font-family: $fontTitle;
+      margin-bottom: 40px;
+      &  span {
+        background: linear-gradient(to right, $colorRed, $colorViolet, $colorBluette);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-family: $fontTitle;
+      }
     }
 
     & .skills-icon-container {
@@ -25,7 +28,7 @@
       & .skills-small-container{
         display: flex;
         flex-wrap: wrap;
-        width: 65%;
+        width: 70%;
 
 
         & .skills-icon-item {

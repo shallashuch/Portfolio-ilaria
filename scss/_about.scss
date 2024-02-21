@@ -4,15 +4,8 @@
   background-color: $colorBackground;
 
   & .about-container {
-    margin: 100px 60px;
+    margin: 100px 120px;
     display: flex;
-
-    &  span {
-      background: linear-gradient(to right, $colorYellow, $colorRed, $colorViolet, $colorBluette);
-      -webkit-background-clip: text;
-      color: transparent;
-      font-family: $fontTitle;
-    }
 
     & .about-text {
       width: 60%;
@@ -22,6 +15,13 @@
         @include h1Pages;
         margin-bottom: 40px;
         font-family: $fontSubTitle;
+
+        &  span {
+          background: linear-gradient(to right, $colorRed, $colorViolet, $colorBluette);
+          -webkit-background-clip: text;
+          color: transparent;
+          font-family: $fontTitle;
+        }
       }
 
       & p {
@@ -35,29 +35,26 @@
       position: relative;
       padding: 0;
       height: 350px;
-      width: 40%;
-      display: flex;
-     justify-content: center;
+      width: 25%;
+      background-image: url(/images/foto.jpg);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size:cover;
+      border-radius: 30px;
 
-      & img {
-        width: 60%;
-        height: 100%;
-        border-radius: 10px;
-      }
-
-      & .portfolio-overlay {
+      & .about-photo-overlay {
         position: absolute;
         top: 0;
         left: 10;
         height: 100%;
-        width: 60%;
+        width: 100%;
         background: linear-gradient(to right, $colorYellow, $colorRed, $colorViolet, $colorBluette);
-        opacity: 0;
+        opacity: 0.4;
         transition: all .3s ease;
-        border-radius: 10px;
+        border-radius: 30px;
 
         &:hover {
-          opacity: .8;
+          opacity: 0;
         }
       }
     }

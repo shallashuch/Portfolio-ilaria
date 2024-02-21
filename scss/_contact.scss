@@ -1,0 +1,86 @@
+#contact-section {
+  width: 100vw;
+  overflow: hidden;
+  background-color: $colorBackground;
+
+  & .contactme-container {
+    margin: 100px 120px;
+    & h1 {
+      @include h1Pages;
+      margin-bottom: 40px;
+      &  span {
+        background: linear-gradient(to right, $colorRed, $colorViolet, $colorBluette);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-family: $fontTitle;
+      }
+    }
+  }
+}
+
+.contact-container {
+  margin: 100px 60px;
+}
+
+.contact-container .message-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.contact-container .message-box label {
+  color: $colorBluette;
+  font-weight: bold;
+}
+
+.contact-container .message-box .first-row-personal-info input,
+.contact-container .message-box .second-row-message #message-line {
+  border-bottom: 1px solid $colorBluette;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  background-color: $colorBackground;
+}
+
+.contact-container .message-box .first-row-personal-info {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.contact-container .message-box .first-row-personal-info .personal-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-container .message-box .personal-info input {
+  display: block;
+  margin: 20px 0px 0px 0px;
+}
+
+.contact-container .message-box .second-row-message {
+  width: 60%;
+  margin-top: 40px;
+}
+
+.contact-container .message-box .second-row-message .personal-message {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container .message-box .second-row-message .personal-message textarea {
+  margin-top: 20px;
+  border: 0px;
+  background-color: $colorBackground;
+}
+
+.contact-container .message-box #send-message {
+  margin-top: 70px;
+}
+
+#footer-contact-page {
+  padding-top: 50px;
+}

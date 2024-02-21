@@ -1,0 +1,137 @@
+#portfolio-section {
+  width: 100vw;
+  overflow: hidden;
+  background-color: $colorBackground;
+
+  & .portfolio-container {
+    margin: 100px 120px;
+
+    & h1 {
+      @include h1Pages;
+      margin-bottom: 40px;
+      &  span {
+        background: linear-gradient(to right, $colorRed, $colorViolet, $colorBluette);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-family: $fontTitle;
+        background-clip: text;
+
+      }
+    }
+
+    & p {
+      line-height: 2;
+      font-size: 20px;
+      text-align: justify;
+    }
+
+    & .portfolio-project-container {
+      margin-top:100px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      & .portfolio-project-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+
+        & .project-skills-container {
+          padding: 10px;
+          height:fit-content;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          $gradientColors: $colorYellow, $colorRed, $colorViolet, $colorBluette;
+          $borderGradient: linear-gradient(to right, #{$gradientColors});
+          border: 2px solid transparent;
+          border-image: $borderGradient 1;
+          border-image-slice: 1;
+
+          & .project-skill-item {
+            margin-bottom: 15px;
+
+            & i {
+              font-size: 30px;
+              color: $colorBluette;
+    
+              &:hover {
+                color: $colorViolet;
+              }
+            }
+            & svg {
+              &:hover {
+                fill: #a05de8;
+              }
+            }
+          }
+        }
+
+        & .project-foto-container {
+          width: 400px;
+          height: 400px;
+          margin: 0px 20px;
+          position: relative;
+          border-radius: 30px;
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          & .project-photo-overlay {
+            position: absolute;
+            top: 0;
+            left: 10;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to right, $colorYellow, $colorRed, $colorViolet, $colorBluette);
+            opacity: 0.4;
+            transition: all .3s ease;
+            border-radius: 30px;
+    
+            &:hover {
+              opacity: 0;
+            }
+          }
+        }
+
+        & .project-content-container {
+          width: 50%;
+          margin-left: 50px;
+
+          & h3 {
+            @include h3Pages;
+            font-size: 30px;
+            font-family: $fontSubTitle;
+            color: $colorRed;
+          }
+
+          & .project-content-description {
+            & .project-content-link {
+              display: flex;
+              width: 15%;
+              justify-content: space-between;
+              margin-top: 40px;
+              & i {
+                font-size: 30px;
+                color: $colorRed;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#notes-photo-container {
+  background-image: url(/images/notesproject.jpeg);
+}
+
+#weather-photo-container {
+  background-image: url(/images/weatherproject.png);
+}
+
+#pastas-photo-container {
+  background-image: url(/images/pastasproject.png);
+}

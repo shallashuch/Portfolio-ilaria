@@ -1,0 +1,477 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 0px 20px;
+  font-size: 20px;
+}
+.navbar-container .logo {
+  height: 50px;
+  width: 100px;
+}
+.navbar-container .logo a img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.navbar-container .menu-items {
+  display: flex;
+  justify-content: space-between;
+  width: 33%;
+}
+.navbar-container .menu-items a {
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+  color: #e85d5f;
+  font-family: "Anta", sans-serif;
+}
+.navbar-container .icon-open,
+.navbar-container .icon-close {
+  display: none;
+}
+.navbar-container .icon-open .show-button,
+.navbar-container .icon-close .show-button {
+  display: block;
+}
+.navbar-container .icon-open .hide-button,
+.navbar-container .icon-close .hide-button {
+  display: none;
+}
+
+footer {
+  padding-top: 30px;
+  background: linear-gradient(40deg, #e8e65d 68.5%, #5d62e8 33%);
+}
+footer .social-container {
+  padding: 60px 30px;
+  text-align: center;
+}
+footer .social-container #linkedin {
+  margin-right: 30px;
+  color: #e85d5f;
+}
+footer .social-container #linkedin:hover {
+  color: #a05de8;
+}
+footer .social-container #github {
+  margin-left: 50px;
+  color: #e85d5f;
+}
+footer .social-container #github:hover {
+  color: #a05de8;
+}
+footer .social-container .opensource {
+  margin-top: 30px;
+  font-weight: bold;
+}
+footer .social-container .opensource a {
+  text-decoration: none;
+  color: #e85d5f;
+}
+footer .social-container .opensource a:hover {
+  color: #a05de8;
+}
+
+#aboutme-section {
+  width: 100vw;
+  overflow: hidden;
+  background-color: #e8ecf5;
+}
+#aboutme-section .about-container {
+  margin: 100px 120px;
+  display: flex;
+}
+#aboutme-section .about-container .about-text {
+  width: 60%;
+  padding: 0px 40px;
+}
+#aboutme-section .about-container .about-text h1 {
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  margin-bottom: 40px;
+  font-family: "Anta", sans-serif;
+}
+#aboutme-section .about-container .about-text h1 span {
+  background: linear-gradient(to right, #e85d5f, #a05de8, #5d62e8);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Protest Guerrilla", sans-serif;
+}
+#aboutme-section .about-container .about-text p {
+  line-height: 2;
+  font-size: 20px;
+  text-align: justify;
+}
+#aboutme-section .about-container .about-photo {
+  position: relative;
+  padding: 0;
+  height: 350px;
+  width: 25%;
+  background-image: url(/images/foto.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+#aboutme-section .about-container .about-photo .about-photo-overlay {
+  position: absolute;
+  top: 0;
+  left: 10;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #e8e65d, #e85d5f, #a05de8, #5d62e8);
+  opacity: 0.4;
+  transition: all 0.3s ease;
+  border-radius: 30px;
+}
+#aboutme-section .about-container .about-photo .about-photo-overlay:hover {
+  opacity: 0;
+}
+
+#myskill-section {
+  width: 100vw;
+  overflow: hidden;
+  background-color: #e8ecf5;
+}
+#myskill-section .myskill-container {
+  margin: 100px 120px;
+  display: flex;
+  flex-direction: column;
+}
+#myskill-section .myskill-container h1 {
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  margin-bottom: 40px;
+}
+#myskill-section .myskill-container h1 span {
+  background: linear-gradient(to right, #e85d5f, #a05de8, #5d62e8);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Protest Guerrilla", sans-serif;
+}
+#myskill-section .myskill-container .skills-icon-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+#myskill-section .myskill-container .skills-icon-container .skills-small-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+}
+#myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item {
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-icon {
+  margin-bottom: 30px;
+}
+#myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-icon i {
+  font-size: 100px;
+  background: linear-gradient(to right, #e85d5f, #5d62e8);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-icon i:hover {
+  background: linear-gradient(to right, #e8e65d, #a05de8);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-icon svg {
+  --Jquery01: #e85d5f;
+  --Typescript01: #e85d5f;
+  --canva01: #e85d5f;
+  --flexbox01: #e85d5f;
+  --responsive01: #e85d5f;
+  --terminal01: #e85d5f;
+  --Jquery02: #5d62e8;
+  --Typescript02: #5d62e8;
+  --canva02: #5d62e8;
+  --flexbox02: #5d62e8;
+  --responsive02: #5d62e8;
+  --terminal02: #5d62e8;
+}
+#myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-icon svg:hover {
+  --Jquery01: #e8e65d;
+  --Typescript01: #e8e65d;
+  --canva01: #e8e65d;
+  --terminal01: #e8e65d;
+  --flexbox01: #e8e65d;
+  --responsive01: #e8e65d;
+  --Jquery02: #a05de8;
+  --Typescript02: #a05de8;
+  --canva02: #a05de8;
+  --flexbox02: #a05de8;
+  --responsive02: #a05de8;
+  --terminal02: #a05de8;
+}
+#myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-description {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-family: "Anta", sans-serif;
+}
+
+#portfolio-section {
+  width: 100vw;
+  overflow: hidden;
+  background-color: #e8ecf5;
+}
+#portfolio-section .portfolio-container {
+  margin: 100px 120px;
+}
+#portfolio-section .portfolio-container h1 {
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  margin-bottom: 40px;
+}
+#portfolio-section .portfolio-container h1 span {
+  background: linear-gradient(to right, #e85d5f, #a05de8, #5d62e8);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Protest Guerrilla", sans-serif;
+  background-clip: text;
+}
+#portfolio-section .portfolio-container p {
+  line-height: 2;
+  font-size: 20px;
+  text-align: justify;
+}
+#portfolio-section .portfolio-container .portfolio-project-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+#portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container {
+  padding: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid transparent;
+  -o-border-image: linear-gradient(to right, #e8e65d, #e85d5f, #a05de8, #5d62e8) 1;
+     border-image: linear-gradient(to right, #e8e65d, #e85d5f, #a05de8, #5d62e8) 1;
+  border-image-slice: 1;
+}
+#portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container .project-skill-item {
+  margin-bottom: 15px;
+}
+#portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container .project-skill-item i {
+  font-size: 30px;
+  color: #5d62e8;
+}
+#portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container .project-skill-item i:hover {
+  color: #a05de8;
+}
+#portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container .project-skill-item svg:hover {
+  fill: #a05de8;
+}
+#portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-foto-container {
+  width: 400px;
+  height: 400px;
+  margin: 0px 20px;
+  position: relative;
+  border-radius: 30px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-foto-container .project-photo-overlay {
+  position: absolute;
+  top: 0;
+  left: 10;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #e8e65d, #e85d5f, #a05de8, #5d62e8);
+  opacity: 0.4;
+  transition: all 0.3s ease;
+  border-radius: 30px;
+}
+#portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-foto-container .project-photo-overlay:hover {
+  opacity: 0;
+}
+#portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container {
+  width: 50%;
+  margin-left: 50px;
+}
+#portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-size: 30px;
+  font-family: "Anta", sans-serif;
+  color: #e85d5f;
+}
+#portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container .project-content-description .project-content-link {
+  display: flex;
+  width: 15%;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+#portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container .project-content-description .project-content-link i {
+  font-size: 30px;
+  color: #e85d5f;
+}
+
+#notes-photo-container {
+  background-image: url(/images/notesproject.jpeg);
+}
+
+#weather-photo-container {
+  background-image: url(/images/weatherproject.png);
+}
+
+#pastas-photo-container {
+  background-image: url(/images/pastasproject.png);
+}
+
+#contact-section {
+  width: 100vw;
+  overflow: hidden;
+  background-color: #e8ecf5;
+}
+#contact-section .contactme-container {
+  margin: 100px 120px;
+}
+#contact-section .contactme-container h1 {
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  margin-bottom: 40px;
+}
+#contact-section .contactme-container h1 span {
+  background: linear-gradient(to right, #e85d5f, #a05de8, #5d62e8);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Protest Guerrilla", sans-serif;
+}
+
+.contact-container {
+  margin: 100px 60px;
+}
+
+.contact-container .message-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.contact-container .message-box label {
+  color: #5d62e8;
+  font-weight: bold;
+}
+
+.contact-container .message-box .first-row-personal-info input,
+.contact-container .message-box .second-row-message #message-line {
+  border-bottom: 1px solid #5d62e8;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  background-color: #e8ecf5;
+}
+
+.contact-container .message-box .first-row-personal-info {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.contact-container .message-box .first-row-personal-info .personal-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-container .message-box .personal-info input {
+  display: block;
+  margin: 20px 0px 0px 0px;
+}
+
+.contact-container .message-box .second-row-message {
+  width: 60%;
+  margin-top: 40px;
+}
+
+.contact-container .message-box .second-row-message .personal-message {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container .message-box .second-row-message .personal-message textarea {
+  margin-top: 20px;
+  border: 0px;
+  background-color: #e8ecf5;
+}
+
+.contact-container .message-box #send-message {
+  margin-top: 70px;
+}
+
+#footer-contact-page {
+  padding-top: 50px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.body-container {
+  width: 100vw;
+  overflow: hidden;
+  font-family: "Quattrocento", serif;
+}
+
+#presentation-section {
+  background: linear-gradient(110deg, #e8e65d 67%, #5d62e8 33%);
+  height: 100vh;
+}
+#presentation-section .hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 40px;
+  height: 100%;
+}
+#presentation-section .hero-container .hero {
+  width: 70vw;
+}
+#presentation-section .hero-container .hero h1 {
+  font-size: 90px;
+  font-weight: 900;
+  color: #e85d5f;
+  font-family: "Protest Guerrilla", sans-serif;
+}
+#presentation-section .hero-container .hero h2 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  font-family: "Anta", sans-serif;
+}
+#presentation-section .hero-container .hero p {
+  font-size: 25px;
+  margin-top: 15px;
+  font-family: "Anta", sans-serif;
+}
+#presentation-section .hero-container .hero p span {
+  color: #e85d5f;
+}
+#presentation-section .hero-container .hero p span:hover {
+  color: #a05de8;
+}/*# sourceMappingURL=main.css.map */

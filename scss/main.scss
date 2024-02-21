@@ -1,0 +1,79 @@
+@mixin hoverText {
+  &:hover {
+    color: $colorViolet;
+  }
+};
+
+@mixin h1Pages {
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+@mixin h3Pages {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+
+@import './variables';
+@import './navbar';
+@import './footer';
+@import './about';
+@import './skill';
+@import './portfolio.scss';
+@import './contact';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.body-container {
+  width: 100vw;
+  overflow: hidden;
+  font-family: "Quattrocento", serif;
+}
+
+#presentation-section {
+  background: linear-gradient(110deg,  $colorYellow  67%, $colorBluette 33%);
+  height: 100vh;
+
+  & .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 40px;
+    height: 100%;
+
+    & .hero {
+      width: 70vw;
+
+      & h1 {
+        font-size: 90px;
+        font-weight: 900;
+        color: $colorRed;
+        font-family: $fontTitle;
+      }
+
+      & h2 {
+        font-size: 20px;
+        margin-bottom: 25px;
+        font-family: $fontSubTitle;
+      }
+
+      & p {
+        font-size: 25px;
+        margin-top: 15px;
+        font-family: $fontSubTitle;
+
+        & span {
+          color: $colorRed;
+          @include hoverText;
+        }
+      }
+    }
+  }
+}

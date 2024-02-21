@@ -1,0 +1,33 @@
+footer {
+  padding-top: 30px;
+  background: linear-gradient(40deg, $colorYellow 68.5%, $colorBluette 33%);
+
+  & .social-container {
+    padding: 60px 30px;
+    text-align: center;
+
+    & #linkedin {
+      margin-right: 30px;
+      color: $colorRed;
+      @include hoverText;
+    }
+    
+    & #github {
+      margin-left: 50px;
+      color: $colorRed;
+      @include hoverText;
+    }
+
+    & .opensource {
+      margin-top: 30px;
+      font-weight: bold;
+
+      & a {
+        text-decoration: none;
+        color: $colorRed;
+        @include hoverText;
+      }
+    }
+  }
+}
+

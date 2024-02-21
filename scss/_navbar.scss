@@ -1,0 +1,44 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 0px 20px;
+  font-size: 20px;
+
+  & .logo {
+    height: 50px;
+    width: 100px;
+
+    & a img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  & .menu-items {
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+
+    & a {
+      text-decoration: none;
+      font-weight: 600;
+      display: block;
+      color: $colorRed;
+      font-family: $fontSubTitle;
+    }
+  }
+
+  .icon-open,
+  .icon-close {
+    display: none;
+
+    & .show-button {
+      display: block;
+    }
+    
+    & .hide-button {
+      display: none;
+    }
+  }
+}

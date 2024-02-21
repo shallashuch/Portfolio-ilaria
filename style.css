@@ -1,12 +1,28 @@
 :root {
-  --color1: #d6ef16;
-  --color2: #01415B;
-  --color3: #005148;
-  --color4: #019587;
-  --color5: #CCEA8D;
-  --background: #f5ffe0;
+  --color1: #e8e65d;
+  /* --color2: #fcfdff; */
+  --color3: #e85d5f;
+  --color4: #5d62e8;
+  /* --color5: #CCEA8D; */
+  /* --background: #f5ffe0; */
+  --background: #fcfdff;
   --font-family: 'Montserrat', sans-serif;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+.body-container {
+  width: 100vw;
+  overflow: hidden;
+} 
 
 /* navbar */
 
@@ -54,19 +70,10 @@
   display: none;
 }
 
-/* index */
-body {
-  box-sizing: border-box;
-  font-family: var(--font-family);
-}
-
-.body-container {
-  width: 100vw;
-  overflow: hidden;
-} 
+/* PRESENTATION */
 
 #presentation-section {
-  background: linear-gradient(110deg, #019587 57%, #ccf381 33%);
+  background: linear-gradient(110deg, var(--color4) 67%, var(--color1) 33%);
 }
 
 .hero-container {

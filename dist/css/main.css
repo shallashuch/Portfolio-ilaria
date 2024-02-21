@@ -40,7 +40,6 @@
 }
 
 footer {
-  margin-top: 60px;
   padding-top: 30px;
   background: linear-gradient(40deg, #e8e65d 68.5%, #5d62e8 33%);
 }
@@ -80,7 +79,8 @@ footer .social-container .opensource a:hover {
   background-color: #e8ecf5;
 }
 #aboutme-section .about-container {
-  margin: 150px 60px;
+  margin: 100px 60px;
+  display: flex;
 }
 #aboutme-section .about-container span {
   background: linear-gradient(to right, #e8e65d, #e85d5f, #a05de8, #5d62e8);
@@ -88,39 +88,42 @@ footer .social-container .opensource a:hover {
   color: transparent;
   font-family: "Protest Guerrilla", sans-serif;
 }
+#aboutme-section .about-container .about-text {
+  width: 60%;
+  padding: 0px 40px;
+}
 #aboutme-section .about-container .about-text h1 {
   font-size: 60px;
   font-weight: 900;
   color: var(--color2);
   margin-bottom: 15px;
-  margin-bottom: 20px;
-  font-family: "Anta", sans-serif;
-}
-#aboutme-section .about-container .about-text h3 {
-  font-size: 20px;
-  font-weight: bold;
-  color: var(--color2);
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   font-family: "Anta", sans-serif;
 }
 #aboutme-section .about-container .about-text p {
-  margin: 40px 0 60px 0;
+  line-height: 2;
+  font-size: 20px;
+  text-align: justify;
 }
 #aboutme-section .about-container .about-photo {
   position: relative;
   padding: 0;
+  height: 350px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
 }
 #aboutme-section .about-container .about-photo img {
-  width: 100%;
+  width: 60%;
   height: 100%;
   border-radius: 10px;
 }
 #aboutme-section .about-container .about-photo .portfolio-overlay {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 10;
   height: 100%;
-  width: 100%;
+  width: 60%;
   background: linear-gradient(to right, #e8e65d, #e85d5f, #a05de8, #5d62e8);
   opacity: 0;
   transition: all 0.3s ease;
@@ -128,6 +131,92 @@ footer .social-container .opensource a:hover {
 }
 #aboutme-section .about-container .about-photo .portfolio-overlay:hover {
   opacity: 0.8;
+}
+
+#myskill-section {
+  width: 100vw;
+  overflow: hidden;
+  background-color: #e8ecf5;
+}
+#myskill-section .myskill-container {
+  margin: 100px 60px;
+  display: flex;
+  flex-direction: column;
+}
+#myskill-section .myskill-container h1 {
+  font-size: 60px;
+  font-weight: 900;
+  color: var(--color2);
+  margin-bottom: 15px;
+  background: linear-gradient(to right, #e8e65d, #e85d5f, #a05de8, #5d62e8);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Protest Guerrilla", sans-serif;
+}
+#myskill-section .myskill-container .skills-icon-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+#myskill-section .myskill-container .skills-icon-container .skills-small-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 65%;
+}
+#myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item {
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-icon {
+  margin-bottom: 30px;
+}
+#myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-icon i {
+  font-size: 100px;
+  background: linear-gradient(to right, #e85d5f, #5d62e8);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-icon i:hover {
+  background: linear-gradient(to right, #e8e65d, #a05de8);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-icon svg {
+  --Jquery01: #e85d5f;
+  --Typescript01: #e85d5f;
+  --canva01: #e85d5f;
+  --flexbox01: #e85d5f;
+  --responsive01: #e85d5f;
+  --terminal01: #e85d5f;
+  --Jquery02: #5d62e8;
+  --Typescript02: #5d62e8;
+  --canva02: #5d62e8;
+  --flexbox02: #5d62e8;
+  --responsive02: #5d62e8;
+  --terminal02: #5d62e8;
+}
+#myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-icon svg:hover {
+  --Jquery01: #e8e65d;
+  --Typescript01: #e8e65d;
+  --canva01: #e8e65d;
+  --terminal01: #e8e65d;
+  --flexbox01: #e8e65d;
+  --responsive01: #e8e65d;
+  --Jquery02: #a05de8;
+  --Typescript02: #a05de8;
+  --canva02: #a05de8;
+  --flexbox02: #a05de8;
+  --responsive02: #a05de8;
+  --terminal02: #a05de8;
+}
+#myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-description {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color2);
+  margin-bottom: 25px;
+  font-family: "Anta", sans-serif;
 }
 
 * {
@@ -143,13 +232,15 @@ footer .social-container .opensource a:hover {
 
 #presentation-section {
   background: linear-gradient(110deg, #e8e65d 67%, #5d62e8 33%);
+  height: 100vh;
 }
 #presentation-section .hero-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 100px 40px;
+  padding: 0px 40px;
+  height: 100%;
 }
 #presentation-section .hero-container .hero {
   width: 70vw;

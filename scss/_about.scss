@@ -4,7 +4,8 @@
   background-color: $colorBackground;
 
   & .about-container {
-    margin: 150px 60px;
+    margin: 100px 60px;
+    display: flex;
 
     &  span {
       background: linear-gradient(to right, $colorYellow, $colorRed, $colorViolet, $colorBluette);
@@ -14,28 +15,32 @@
     }
 
     & .about-text {
+      width: 60%;
+      padding: 0px 40px;
+
       & h1 {
         @include h1Pages;
-        margin-bottom: 20px;
-        font-family: $fontSubTitle;
-      }
-
-      & h3 {
-        @include h3Pages;
+        margin-bottom: 40px;
         font-family: $fontSubTitle;
       }
 
       & p {
-        margin: 40px 0 60px 0;
+        line-height: 2;
+        font-size: 20px;
+        text-align: justify;
       }
     }
 
     & .about-photo {
       position: relative;
       padding: 0;
+      height: 350px;
+      width: 40%;
+      display: flex;
+     justify-content: center;
 
       & img {
-        width: 100%;
+        width: 60%;
         height: 100%;
         border-radius: 10px;
       }
@@ -43,9 +48,9 @@
       & .portfolio-overlay {
         position: absolute;
         top: 0;
-        left: 0;
+        left: 10;
         height: 100%;
-        width: 100%;
+        width: 60%;
         background: linear-gradient(to right, $colorYellow, $colorRed, $colorViolet, $colorBluette);
         opacity: 0;
         transition: all .3s ease;

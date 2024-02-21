@@ -1,0 +1,91 @@
+#myskill-section {
+  width: 100vw;
+  overflow: hidden;
+  background-color: $colorBackground;
+
+  & .myskill-container {
+    margin: 100px 60px;
+    display: flex;
+    flex-direction: column;
+
+    & h1 {
+      @include h1Pages;
+      background: linear-gradient(to right, $colorYellow, $colorRed, $colorViolet, $colorBluette);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-family: $fontTitle;
+    }
+
+    & .skills-icon-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+
+
+      & .skills-small-container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 65%;
+
+
+        & .skills-icon-item {
+          padding: 40px 40px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+  
+          & .skill-icon {
+            margin-bottom: 30px;
+            & i {
+              font-size: 100px;
+              background: linear-gradient(to right, $colorRed, $colorBluette);
+              -webkit-background-clip: text;
+              color: transparent;
+    
+              &:hover {
+                background: linear-gradient(to right, $colorYellow, $colorViolet);
+                -webkit-background-clip: text;
+                color: transparent;
+              }
+            }
+  
+            & svg {
+  
+              --Jquery01: #e85d5f;
+              --Typescript01: #e85d5f;
+              --canva01: #e85d5f;
+              --flexbox01: #e85d5f;
+              --responsive01: #e85d5f;
+              --terminal01: #e85d5f;
+              --Jquery02: #5d62e8;
+              --Typescript02: #5d62e8;
+              --canva02: #5d62e8;
+              --flexbox02: #5d62e8;
+              --responsive02: #5d62e8;
+              --terminal02: #5d62e8;
+  
+              &:hover {
+                --Jquery01: #e8e65d;
+                --Typescript01: #e8e65d;
+                --canva01: #e8e65d;
+                --terminal01: #e8e65d;
+                --flexbox01: #e8e65d;
+                --responsive01: #e8e65d;
+                --Jquery02: #a05de8;
+                --Typescript02: #a05de8;
+                --canva02: #a05de8;
+                --flexbox02: #a05de8;
+                --responsive02: #a05de8;
+                --terminal02: #a05de8;
+              }
+            }
+          }
+          & .skill-description {
+            @include h3Pages;
+            font-family: $fontSubTitle;
+          }
+        }
+      }
+    }
+  }
+}

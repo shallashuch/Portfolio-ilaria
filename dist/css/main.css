@@ -356,6 +356,7 @@ footer .social-container .opensource a:hover {
 #contact-section .contactme-container h1 span {
   background: linear-gradient(to right, #e85d5f, #a05de8, #5d62e8);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   font-family: "Protest Guerrilla", sans-serif;
 }

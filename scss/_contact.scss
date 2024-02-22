@@ -2,86 +2,152 @@
   width: 100vw;
   overflow: hidden;
   background-color: $colorBackground;
+  padding: 100px 120px;
 
-  & .contactme-container {
-    margin: 100px 120px;
-    & h1 {
-      @include h1Pages;
-      margin-bottom: 40px;
-      &  span {
-        background: linear-gradient(to right, $colorRed, $colorViolet, $colorBluette);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        font-family: $fontTitle;
-      }
+  & h1 {
+    @include h1Pages;
+    margin-bottom: 40px;
+    text-align: left !important;
+    &  span {
+      background: linear-gradient(to right, $colorRed, $colorViolet, $colorBluette);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-family: $fontTitle;
     }
   }
-}
 
-.contact-container {
-  margin: 100px 60px;
-}
+  & .contactme-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    & .contact-body {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 80%;
 
-.contact-container .message-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 80px;
-}
+      & .info-contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 40%;
 
-.contact-container .message-box label {
-  color: $colorBluette;
-  font-weight: bold;
-}
+        & a {
+          margin-bottom: 30px;
 
-.contact-container .message-box .first-row-personal-info input,
-.contact-container .message-box .second-row-message #message-line {
-  border-bottom: 1px solid $colorBluette;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
-  background-color: $colorBackground;
-}
+          & i {
+            font-size: 40px;
+            @include hoverText;
+            color: $colorRed;
+          }
+        }
 
-.contact-container .message-box .first-row-personal-info {
-  display: flex;
-  justify-content: space-between;
-  width: 60%;
-}
+        & #resume-button {
+          text-decoration: none;
+          color: $colorRed;
+          border: 2px solid $colorRed;
+          width:fit-content;
+          padding: 20px;
+          font-size: 20px;
+          font-weight: 900;
+          border-radius: 20px;
+          cursor: pointer;
 
-.contact-container .message-box .first-row-personal-info .personal-info {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
+          &:hover {
+            color: $colorViolet;
+            border: 2px solid $colorViolet;
+          }
+        }
+      }
+      
+      & .sendmessage-container {
+        flex-basis: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-.contact-container .message-box .personal-info input {
-  display: block;
-  margin: 20px 0px 0px 0px;
-}
-
-.contact-container .message-box .second-row-message {
-  width: 60%;
-  margin-top: 40px;
-}
-
-.contact-container .message-box .second-row-message .personal-message {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-container .message-box .second-row-message .personal-message textarea {
-  margin-top: 20px;
-  border: 0px;
-  background-color: $colorBackground;
-}
-
-.contact-container .message-box #send-message {
-  margin-top: 70px;
-}
-
-#footer-contact-page {
-  padding-top: 50px;
+        & h1 {
+          @include h1Pages;
+          font-family: $fontSubTitle;
+          font-size: 30px;
+          color: $colorRed;
+        }
+  
+        & .message-box {
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+          margin-top: 40px;
+  
+          & label {
+            color: $colorBluette;
+            font-weight: bold;
+          }
+  
+          & .second-row-message {
+            width: 70%;
+            margin-top: 40px;
+  
+            & .personal-message {
+              display: flex;
+              flex-direction: column;
+  
+              & textarea {
+                margin-top: 20px;
+                background-color: $colorBackground;
+                border-bottom: 1px solid $colorBluette;
+                border-left: 0px;
+                border-right: 0px;
+                border-top: 0px;
+                background-color: $colorBackground;
+              }
+            }
+          }
+  
+          & .first-row-personal-info {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+  
+            & .personal-info {
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+  
+              & input {
+                display: block;
+                margin: 20px 0px 0px 0px;
+                border-bottom: 1px solid $colorBluette;
+                border-left: 0px;
+                border-right: 0px;
+                border-top: 0px;
+                background-color: $colorBackground;
+              }
+            }
+          }
+  
+          & #send-message {
+            margin-top: 50px;
+            text-decoration: none;
+            color: $colorBluette;
+            border: 2px solid $colorBluette;
+            width:fit-content;
+            padding: 10px;
+            font-size: 15px;
+            font-weight: 900;
+            border-radius: 15px;
+            cursor: pointer;
+  
+            &:hover {
+              color: $colorRed;
+              border: 2px solid $colorRed;
+            }
+          }
+        }
+      }  
+    }
+  }
 }

@@ -43,33 +43,19 @@ footer {
   padding-top: 30px;
   background: linear-gradient(40deg, #e8e65d 68.5%, #5d62e8 33%);
 }
-footer .social-container {
+footer .footer-container {
   padding: 60px 30px;
   text-align: center;
 }
-footer .social-container #linkedin {
-  margin-right: 30px;
-  color: #e85d5f;
-}
-footer .social-container #linkedin:hover {
-  color: #a05de8;
-}
-footer .social-container #github {
-  margin-left: 50px;
-  color: #e85d5f;
-}
-footer .social-container #github:hover {
-  color: #a05de8;
-}
-footer .social-container .opensource {
+footer .footer-container .opensource {
   margin-top: 30px;
   font-weight: bold;
 }
-footer .social-container .opensource a {
+footer .footer-container .opensource a {
   text-decoration: none;
   color: #e85d5f;
 }
-footer .social-container .opensource a:hover {
+footer .footer-container .opensource a:hover {
   color: #a05de8;
 }
 
@@ -114,6 +100,7 @@ footer .social-container .opensource a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 30px;
+  margin: 100px 0px 0px 60px;
 }
 #aboutme-section .about-container .about-photo .about-photo-overlay {
   position: absolute;
@@ -155,15 +142,15 @@ footer .social-container .opensource a:hover {
 #myskill-section .myskill-container .skills-icon-container {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 #myskill-section .myskill-container .skills-icon-container .skills-small-container {
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
+  width: 90%;
 }
 #myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item {
-  padding: 40px 40px;
+  padding: 30px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -343,89 +330,142 @@ footer .social-container .opensource a:hover {
   width: 100vw;
   overflow: hidden;
   background-color: #e8ecf5;
+  padding: 100px 120px;
 }
-#contact-section .contactme-container {
-  margin: 100px 120px;
-}
-#contact-section .contactme-container h1 {
+#contact-section h1 {
   font-size: 60px;
   font-weight: 900;
   margin-bottom: 15px;
   margin-bottom: 40px;
+  text-align: left !important;
 }
-#contact-section .contactme-container h1 span {
+#contact-section h1 span {
   background: linear-gradient(to right, #e85d5f, #a05de8, #5d62e8);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   font-family: "Protest Guerrilla", sans-serif;
 }
-
-.contact-container {
-  margin: 100px 60px;
+#contact-section .contactme-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.contact-container .message-box {
+#contact-section .contactme-container .contact-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+}
+#contact-section .contactme-container .contact-body .info-contacts {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 80px;
+  flex-basis: 40%;
 }
-
-.contact-container .message-box label {
+#contact-section .contactme-container .contact-body .info-contacts a {
+  margin-bottom: 30px;
+}
+#contact-section .contactme-container .contact-body .info-contacts a i {
+  font-size: 40px;
+  color: #e85d5f;
+}
+#contact-section .contactme-container .contact-body .info-contacts a i:hover {
+  color: #a05de8;
+}
+#contact-section .contactme-container .contact-body .info-contacts #resume-button {
+  text-decoration: none;
+  color: #e85d5f;
+  border: 2px solid #e85d5f;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#contact-section .contactme-container .contact-body .info-contacts #resume-button:hover {
+  color: #a05de8;
+  border: 2px solid #a05de8;
+}
+#contact-section .contactme-container .contact-body .sendmessage-container {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contact-section .contactme-container .contact-body .sendmessage-container h1 {
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  font-family: "Anta", sans-serif;
+  font-size: 30px;
+  color: #e85d5f;
+}
+#contact-section .contactme-container .contact-body .sendmessage-container .message-box {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 40px;
+}
+#contact-section .contactme-container .contact-body .sendmessage-container .message-box label {
   color: #5d62e8;
   font-weight: bold;
 }
-
-.contact-container .message-box .first-row-personal-info input,
-.contact-container .message-box .second-row-message #message-line {
+#contact-section .contactme-container .contact-body .sendmessage-container .message-box .second-row-message {
+  width: 70%;
+  margin-top: 40px;
+}
+#contact-section .contactme-container .contact-body .sendmessage-container .message-box .second-row-message .personal-message {
+  display: flex;
+  flex-direction: column;
+}
+#contact-section .contactme-container .contact-body .sendmessage-container .message-box .second-row-message .personal-message textarea {
+  margin-top: 20px;
+  background-color: #e8ecf5;
   border-bottom: 1px solid #5d62e8;
   border-left: 0px;
   border-right: 0px;
   border-top: 0px;
   background-color: #e8ecf5;
 }
-
-.contact-container .message-box .first-row-personal-info {
+#contact-section .contactme-container .contact-body .sendmessage-container .message-box .first-row-personal-info {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 70%;
 }
-
-.contact-container .message-box .first-row-personal-info .personal-info {
+#contact-section .contactme-container .contact-body .sendmessage-container .message-box .first-row-personal-info .personal-info {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-
-.contact-container .message-box .personal-info input {
+#contact-section .contactme-container .contact-body .sendmessage-container .message-box .first-row-personal-info .personal-info input {
   display: block;
   margin: 20px 0px 0px 0px;
-}
-
-.contact-container .message-box .second-row-message {
-  width: 60%;
-  margin-top: 40px;
-}
-
-.contact-container .message-box .second-row-message .personal-message {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-container .message-box .second-row-message .personal-message textarea {
-  margin-top: 20px;
-  border: 0px;
+  border-bottom: 1px solid #5d62e8;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
   background-color: #e8ecf5;
 }
-
-.contact-container .message-box #send-message {
-  margin-top: 70px;
+#contact-section .contactme-container .contact-body .sendmessage-container .message-box #send-message {
+  margin-top: 50px;
+  text-decoration: none;
+  color: #5d62e8;
+  border: 2px solid #5d62e8;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 900;
+  border-radius: 15px;
+  cursor: pointer;
 }
-
-#footer-contact-page {
-  padding-top: 50px;
+#contact-section .contactme-container .contact-body .sendmessage-container .message-box #send-message:hover {
+  color: #e85d5f;
+  border: 2px solid #e85d5f;
 }
 
 * {

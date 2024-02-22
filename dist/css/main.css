@@ -1,42 +1,80 @@
 .navbar-container {
+  position: relative;
+}
+.navbar-container .navbar-section-text {
+  position: fixed;
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px 0px 20px;
+  padding: 50px 30px;
   font-size: 20px;
-}
-.navbar-container .logo {
-  height: 50px;
-  width: 100px;
-}
-.navbar-container .logo a img {
-  height: 100%;
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  z-index: 1000;
 }
-.navbar-container .menu-items {
+.navbar-container .navbar-section-text .open-btn-ctnr {
+  position: absolute;
+  right: 70px;
   display: flex;
-  justify-content: space-between;
-  width: 33%;
+  justify-content: center;
 }
-.navbar-container .menu-items a {
+.navbar-container .navbar-section-text .menu-items {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  background-color: #e8e65d;
+  padding: 100px 30px 30px 30px;
+  border-radius: 20px;
+}
+.navbar-container .navbar-section-text .menu-items .icon-close {
+  position: absolute;
+  right: 55px;
+  top: 20px;
+}
+.navbar-container .navbar-section-text .menu-items .menu-options-container {
+  text-align: center;
+}
+.navbar-container .navbar-section-text .menu-items .menu-options-container a {
   text-decoration: none;
   font-weight: 600;
   display: block;
   color: #e85d5f;
   font-family: "Anta", sans-serif;
 }
-.navbar-container .icon-open,
-.navbar-container .icon-close {
-  display: none;
+.navbar-container .navbar-section-text .icon-open,
+.navbar-container .navbar-section-text .icon-close {
+  font-size: 30px;
+  color: #e85d5f;
 }
-.navbar-container .icon-open .show-button,
-.navbar-container .icon-close .show-button {
+.navbar-container .navbar-section-text .show-button {
   display: block;
 }
-.navbar-container .icon-open .hide-button,
-.navbar-container .icon-close .hide-button {
+.navbar-container .navbar-section-text .hide-button {
   display: none;
+}
+.navbar-container .navbar-section-dice {
+  background-color: rgba(232, 230, 93, 0.16);
+  padding: 20px;
+  border-radius: 15px;
+  position: fixed;
+  right: 60px;
+  top: 400px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.navbar-container .navbar-section-dice .items {
+  position: relative;
+  margin: 10px 0px;
+}
+.navbar-container .navbar-section-dice .items a {
+  color: #e85d5f;
+}
+.navbar-container .navbar-section-dice .items a .clickable {
+  font-size: 22px;
+}
+.navbar-container .navbar-section-dice .items a .rotate-scale-up {
+  transform: rotate(1turn);
+  transition: transform 1s ease-out;
+  font-size: 32px;
 }
 
 footer {

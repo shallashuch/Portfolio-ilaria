@@ -1,37 +1,54 @@
 .navbar-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 20px 0px 20px;
-  font-size: 20px;
-
-  & .logo {
-    height: 50px;
-    width: 100px;
-
-    & a img {
-      height: 100%;
-      width: 100%;
-      object-fit: contain;
-    }
-  }
-
-  & .menu-items {
+  position: relative;
+  .navbar-section-text {
+    // background-color: rgba(232, 230, 93, 0.16);
+    position: fixed;
     display: flex;
     justify-content: space-between;
-    width: 33%;
+    padding: 50px 30px;
+    font-size: 20px;
+    width: 100%;
+    z-index: 1000;
 
-    & a {
-      text-decoration: none;
-      font-weight: 600;
-      display: block;
-      color: $colorRed;
-      font-family: $fontSubTitle;
+    & .open-btn-ctnr {
+      position: absolute;
+      right: 70px;
+      display: flex;
+      justify-content: center;
     }
-  }
 
-  .icon-open,
-  .icon-close {
-    display: none;
+    & .menu-items {
+      position: absolute;
+      right: 20px;
+      top: 30px;
+      background-color: $colorYellow;
+      padding: 100px 30px 30px 30px;
+      border-radius: 20px;
+
+      & .icon-close {
+        position: absolute;
+        right: 55px;
+        top:20px;
+      }
+
+      & .menu-options-container {
+        text-align: center;
+        // position: absolute;
+        & a {
+          text-decoration: none;
+          font-weight: 600;
+          display: block;
+          color: $colorRed;
+          font-family: $fontSubTitle;
+        }
+      }
+    }
+  
+    .icon-open,
+    .icon-close {
+      font-size: 30px;
+      color: $colorRed;
+    }
 
     & .show-button {
       display: block;
@@ -41,4 +58,54 @@
       display: none;
     }
   }
+
+  & .navbar-section-dice {
+    background-color: rgba(232, 230, 93, 0.16);
+    padding: 20px;
+    border-radius: 15px;
+    position: fixed;
+    right: 60px;
+    top:400px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    & .items {
+      position: relative;
+      margin: 10px 0px;
+  
+      & a {
+        color: $colorRed;
+
+        & .clickable {
+          font-size: 22px;
+        }
+
+        & .rotate-scale-up {
+          transform: rotate(1turn);
+          transition: transform 1s ease-out;
+          font-size: 32px;
+        }
+      }
+    }
+  }
+
+  // & .navbar-section-text {
+  //   padding-top: 20px;
+  //   & .clickable-text {
+  //     display: block;
+  //     position: relative;
+  //     margin: 5px 0px;
+  
+  //     & a {
+  //       text-decoration: none;
+  //       font-weight: 600;
+  //       display: block;
+  //       color: $colorRed;
+  //       font-size: 20px;
+  //       font-family: $fontSubTitle;
+  //     }
+  //   }
+  // }
 }
+

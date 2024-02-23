@@ -2,9 +2,12 @@
   width: 100vw;
   overflow: hidden;
   background-color: $colorBackground;
+  display: flex;
+  justify-content: center;
 
   & .portfolio-container {
-    margin: 100px 120px;
+    margin: 70px 120px;
+    width: 75%;
 
     & h1 {
       @include h1Pages;
@@ -115,6 +118,10 @@
               & i {
                 font-size: 30px;
                 color: $colorRed;
+
+                &:hover {
+                  color: $colorViolet;
+                }
               }
             }
           }

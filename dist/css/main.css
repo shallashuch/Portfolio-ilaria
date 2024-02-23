@@ -101,14 +101,16 @@ footer .footer-container .opensource a:hover {
   width: 100vw;
   overflow: hidden;
   background-color: #e8ecf5;
+  display: flex;
+  justify-content: center;
 }
 #aboutme-section .about-container {
-  margin: 100px 120px;
+  margin: 70px 120px;
   display: flex;
+  width: 75%;
 }
 #aboutme-section .about-container .about-text {
   width: 60%;
-  padding: 0px 40px;
 }
 #aboutme-section .about-container .about-text h1 {
   font-size: 60px;
@@ -127,6 +129,33 @@ footer .footer-container .opensource a:hover {
   line-height: 2;
   font-size: 20px;
   text-align: justify;
+}
+#aboutme-section .about-container .about-text p a {
+  background-image: linear-gradient(to right, #a05de8, #a05de8 50%, #e85d5f 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+#aboutme-section .about-container .about-text p a:before {
+  content: "";
+  background: #a05de8;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+#aboutme-section .about-container .about-text p a:hover {
+  background-position: 0;
+}
+#aboutme-section .about-container .about-text p a:hover::before {
+  width: 100%;
 }
 #aboutme-section .about-container .about-photo {
   position: relative;
@@ -159,11 +188,14 @@ footer .footer-container .opensource a:hover {
   width: 100vw;
   overflow: hidden;
   background-color: #e8ecf5;
+  display: flex;
+  justify-content: center;
 }
 #myskill-section .myskill-container {
-  margin: 100px 120px;
+  margin: 70px 120px;
   display: flex;
   flex-direction: column;
+  width: 75%;
 }
 #myskill-section .myskill-container h1 {
   font-size: 60px;
@@ -185,7 +217,6 @@ footer .footer-container .opensource a:hover {
 #myskill-section .myskill-container .skills-icon-container .skills-small-container {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
 }
 #myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item {
   padding: 30px 40px;
@@ -246,9 +277,12 @@ footer .footer-container .opensource a:hover {
   width: 100vw;
   overflow: hidden;
   background-color: #e8ecf5;
+  display: flex;
+  justify-content: center;
 }
 #portfolio-section .portfolio-container {
-  margin: 100px 120px;
+  margin: 70px 120px;
+  width: 75%;
 }
 #portfolio-section .portfolio-container h1 {
   font-size: 60px;
@@ -351,6 +385,9 @@ footer .footer-container .opensource a:hover {
   font-size: 30px;
   color: #e85d5f;
 }
+#portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container .project-content-description .project-content-link i:hover {
+  color: #a05de8;
+}
 
 #notes-photo-container {
   background-image: url(/images/notesproject.jpeg);
@@ -368,73 +405,120 @@ footer .footer-container .opensource a:hover {
   width: 100vw;
   overflow: hidden;
   background-color: #e8ecf5;
-  padding: 100px 120px;
+  display: flex;
+  justify-content: center;
 }
-#contact-section h1 {
+#contact-section #contact-section-container {
+  width: 75%;
+  margin: 0px 120px 100px 120px;
+}
+#contact-section #contact-section-container h1 {
   font-size: 60px;
   font-weight: 900;
   margin-bottom: 15px;
-  margin-bottom: 40px;
+  margin-bottom: 120px;
   text-align: left !important;
 }
-#contact-section h1 span {
+#contact-section #contact-section-container h1 span {
   background: linear-gradient(to right, #e85d5f, #a05de8, #5d62e8);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   font-family: "Protest Guerrilla", sans-serif;
 }
-#contact-section .contactme-container {
+#contact-section #contact-section-container .contactme-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#contact-section .contactme-container .contact-body {
+#contact-section #contact-section-container .contactme-container .contact-body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 80%;
+  width: 90%;
 }
-#contact-section .contactme-container .contact-body .info-contacts {
+#contact-section #contact-section-container .contactme-container .contact-body .info-contacts {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-basis: 40%;
 }
-#contact-section .contactme-container .contact-body .info-contacts a {
+#contact-section #contact-section-container .contactme-container .contact-body .info-contacts a {
   margin-bottom: 30px;
 }
-#contact-section .contactme-container .contact-body .info-contacts a i {
+#contact-section #contact-section-container .contactme-container .contact-body .info-contacts a i {
   font-size: 40px;
   color: #e85d5f;
 }
-#contact-section .contactme-container .contact-body .info-contacts a i:hover {
+#contact-section #contact-section-container .contactme-container .contact-body .info-contacts a i:hover {
   color: #a05de8;
 }
-#contact-section .contactme-container .contact-body .info-contacts #resume-button {
-  text-decoration: none;
+#contact-section #contact-section-container .contactme-container .contact-body .info-contacts #resume-button {
+  box-shadow: inset 0 0 0 4px #e85d5f;
   color: #e85d5f;
-  border: 2px solid #e85d5f;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 20px;
-  font-size: 20px;
-  font-weight: 900;
-  border-radius: 20px;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+  border-radius: 10px;
+  background: none;
+  border: none;
   cursor: pointer;
+  padding: 20px;
+  border-radius: 10px;
 }
-#contact-section .contactme-container .contact-body .info-contacts #resume-button:hover {
+#contact-section #contact-section-container .contactme-container .contact-body .info-contacts #resume-button::before, #contact-section #contact-section-container .contactme-container .contact-body .info-contacts #resume-button::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 10px;
+  bottom: 0;
+  right: 0;
+}
+#contact-section #contact-section-container .contactme-container .contact-body .info-contacts #resume-button::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+#contact-section #contact-section-container .contactme-container .contact-body .info-contacts #resume-button::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+#contact-section #contact-section-container .contactme-container .contact-body .info-contacts #resume-button:hover {
   color: #a05de8;
-  border: 2px solid #a05de8;
 }
-#contact-section .contactme-container .contact-body .sendmessage-container {
+#contact-section #contact-section-container .contactme-container .contact-body .info-contacts #resume-button:hover::before, #contact-section #contact-section-container .contactme-container .contact-body .info-contacts #resume-button:hover::after {
+  border-color: #a05de8;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+#contact-section #contact-section-container .contactme-container .contact-body .info-contacts #resume-button:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+#contact-section #contact-section-container .contactme-container .contact-body .info-contacts #resume-button:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
+}
+#contact-section #contact-section-container .contactme-container .contact-body .info-contacts #resume-button:focus {
+  outline: 2px solid #a05de8;
+}
+#contact-section #contact-section-container .contactme-container .contact-body .info-contacts #resume-button a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #e85d5f;
+}
+#contact-section #contact-section-container .contactme-container .contact-body .info-contacts #resume-button a:hover {
+  color: #a05de8;
+}
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container {
   flex-basis: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#contact-section .contactme-container .contact-body .sendmessage-container h1 {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container h1 {
   font-size: 60px;
   font-weight: 900;
   margin-bottom: 15px;
@@ -442,25 +526,25 @@ footer .footer-container .opensource a:hover {
   font-size: 30px;
   color: #e85d5f;
 }
-#contact-section .contactme-container .contact-body .sendmessage-container .message-box {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: center;
   margin-top: 40px;
 }
-#contact-section .contactme-container .contact-body .sendmessage-container .message-box label {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box label {
   color: #5d62e8;
   font-weight: bold;
 }
-#contact-section .contactme-container .contact-body .sendmessage-container .message-box .second-row-message {
-  width: 70%;
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box .second-row-message {
+  width: 80%;
   margin-top: 40px;
 }
-#contact-section .contactme-container .contact-body .sendmessage-container .message-box .second-row-message .personal-message {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box .second-row-message .personal-message {
   display: flex;
   flex-direction: column;
 }
-#contact-section .contactme-container .contact-body .sendmessage-container .message-box .second-row-message .personal-message textarea {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box .second-row-message .personal-message textarea {
   margin-top: 20px;
   background-color: #e8ecf5;
   border-bottom: 1px solid #5d62e8;
@@ -469,17 +553,17 @@ footer .footer-container .opensource a:hover {
   border-top: 0px;
   background-color: #e8ecf5;
 }
-#contact-section .contactme-container .contact-body .sendmessage-container .message-box .first-row-personal-info {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box .first-row-personal-info {
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 80%;
 }
-#contact-section .contactme-container .contact-body .sendmessage-container .message-box .first-row-personal-info .personal-info {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box .first-row-personal-info .personal-info {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-#contact-section .contactme-container .contact-body .sendmessage-container .message-box .first-row-personal-info .personal-info input {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box .first-row-personal-info .personal-info input {
   display: block;
   margin: 20px 0px 0px 0px;
   border-bottom: 1px solid #5d62e8;
@@ -488,7 +572,7 @@ footer .footer-container .opensource a:hover {
   border-top: 0px;
   background-color: #e8ecf5;
 }
-#contact-section .contactme-container .contact-body .sendmessage-container .message-box #send-message {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message {
   margin-top: 50px;
   text-decoration: none;
   color: #5d62e8;
@@ -498,11 +582,12 @@ footer .footer-container .opensource a:hover {
   padding: 10px;
   font-size: 15px;
   font-weight: 900;
-  border-radius: 15px;
+  border-radius: 10px;
   cursor: pointer;
 }
-#contact-section .contactme-container .contact-body .sendmessage-container .message-box #send-message:hover {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message:hover {
   color: #e85d5f;
+  background-color: #e8e65d;
   border: 2px solid #e85d5f;
 }
 

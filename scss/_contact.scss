@@ -2,152 +2,165 @@
   width: 100vw;
   overflow: hidden;
   background-color: $colorBackground;
-  padding: 100px 120px;
+  display: flex;
+  justify-content: center;
 
-  & h1 {
-    @include h1Pages;
-    margin-bottom: 40px;
-    text-align: left !important;
-    &  span {
-      background: linear-gradient(to right, $colorRed, $colorViolet, $colorBluette);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      font-family: $fontTitle;
-    }
-  }
+  #{&}-container {
+    width: 75%;
+    margin: 0px 120px 100px 120px;
 
-  & .contactme-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    & .contact-body {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      width: 80%;
-
-      & .info-contacts {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex-basis: 40%;
-
-        & a {
-          margin-bottom: 30px;
-
-          & i {
-            font-size: 40px;
-            @include hoverText;
-            color: $colorRed;
-          }
-        }
-
-        & #resume-button {
-          text-decoration: none;
-          color: $colorRed;
-          border: 2px solid $colorRed;
-          width:fit-content;
-          padding: 20px;
-          font-size: 20px;
-          font-weight: 900;
-          border-radius: 20px;
-          cursor: pointer;
-
-          &:hover {
-            color: $colorViolet;
-            border: 2px solid $colorViolet;
-          }
-        }
+    & h1 {
+      @include h1Pages;
+      margin-bottom: 120px;
+      text-align: left !important;
+      &  span {
+        background: linear-gradient(to right, $colorRed, $colorViolet, $colorBluette);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-family: $fontTitle;
       }
-      
-      & .sendmessage-container {
-        flex-basis: 60%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        & h1 {
-          @include h1Pages;
-          font-family: $fontSubTitle;
-          font-size: 30px;
-          color: $colorRed;
-        }
+    }
   
-        & .message-box {
+    & .contactme-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      & .contact-body {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        width: 90%;
+  
+        & .info-contacts {
           display: flex;
           flex-direction: column;
-          align-items: end;
-          margin-top: 40px;
+          align-items: center;
+          justify-content: center;
+          flex-basis: 40%;
   
-          & label {
-            color: $colorBluette;
-            font-weight: bold;
-          }
+          & a {
+            margin-bottom: 30px;
   
-          & .second-row-message {
-            width: 70%;
-            margin-top: 40px;
-  
-            & .personal-message {
-              display: flex;
-              flex-direction: column;
-  
-              & textarea {
-                margin-top: 20px;
-                background-color: $colorBackground;
-                border-bottom: 1px solid $colorBluette;
-                border-left: 0px;
-                border-right: 0px;
-                border-top: 0px;
-                background-color: $colorBackground;
-              }
-            }
-          }
-  
-          & .first-row-personal-info {
-            display: flex;
-            justify-content: space-between;
-            width: 70%;
-  
-            & .personal-info {
-              display: flex;
-              justify-content: center;
-              flex-direction: column;
-  
-              & input {
-                display: block;
-                margin: 20px 0px 0px 0px;
-                border-bottom: 1px solid $colorBluette;
-                border-left: 0px;
-                border-right: 0px;
-                border-top: 0px;
-                background-color: $colorBackground;
-              }
-            }
-          }
-  
-          & #send-message {
-            margin-top: 50px;
-            text-decoration: none;
-            color: $colorBluette;
-            border: 2px solid $colorBluette;
-            width:fit-content;
-            padding: 10px;
-            font-size: 15px;
-            font-weight: 900;
-            border-radius: 15px;
-            cursor: pointer;
-  
-            &:hover {
+            & i {
+              font-size: 40px;
+              @include hoverText;
               color: $colorRed;
-              border: 2px solid $colorRed;
+            }
+          }
+  
+          & #resume-button {
+            @include btn-border-drawing(#e85d5f, #a05de8, 4px, bottom, right);
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 20px;
+            border-radius: 10px;
+            
+            &:focus { 
+              outline: 2px solid #a05de8; 
+            }
+
+            & a {
+              text-decoration: none;
+              font-size: 20px;
+              color: $colorRed;
+
+              &:hover{
+                color: $colorViolet;
+              }
             }
           }
         }
-      }  
+        
+        & .sendmessage-container {
+          flex-basis: 60%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+  
+          & h1 {
+            @include h1Pages;
+            font-family: $fontSubTitle;
+            font-size: 30px;
+            color: $colorRed;
+          }
+    
+          & .message-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+    
+            & label {
+              color: $colorBluette;
+              font-weight: bold;
+            }
+    
+            & .second-row-message {
+              width: 80%;
+              margin-top: 40px;
+    
+              & .personal-message {
+                display: flex;
+                flex-direction: column;
+    
+                & textarea {
+                  margin-top: 20px;
+                  background-color: $colorBackground;
+                  border-bottom: 1px solid $colorBluette;
+                  border-left: 0px;
+                  border-right: 0px;
+                  border-top: 0px;
+                  background-color: $colorBackground;
+                }
+              }
+            }
+    
+            & .first-row-personal-info {
+              display: flex;
+              justify-content: space-between;
+              width: 80%;
+    
+              & .personal-info {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+    
+                & input {
+                  display: block;
+                  margin: 20px 0px 0px 0px;
+                  border-bottom: 1px solid $colorBluette;
+                  border-left: 0px;
+                  border-right: 0px;
+                  border-top: 0px;
+                  background-color: $colorBackground;
+                }
+              }
+            }
+    
+            & #send-message {
+              margin-top: 50px;
+              text-decoration: none;
+              color: $colorBluette;
+              border: 2px solid $colorBluette;
+              width:fit-content;
+              padding: 10px;
+              font-size: 15px;
+              font-weight: 900;
+              border-radius: 10px;
+              cursor: pointer;
+    
+              &:hover {
+                color: $colorRed;
+                background-color: $colorYellow;
+                border: 2px solid $colorRed;
+              }
+            }
+          }
+        }  
+      }
     }
   }
 }

@@ -2,14 +2,16 @@
   width: 100vw;
   overflow: hidden;
   background-color: $colorBackground;
+  display: flex;
+  justify-content: center;
 
   & .about-container {
-    margin: 100px 120px;
+    margin: 70px 120px;
     display: flex;
+    width: 75%;
 
     & .about-text {
       width: 60%;
-      padding: 0px 40px;
 
       & h1 {
         @include h1Pages;
@@ -28,6 +30,43 @@
         line-height: 2;
         font-size: 20px;
         text-align: justify;
+
+        & a {
+          background-image: linear-gradient(
+            to right,
+            $colorViolet,
+            $colorViolet 50%,
+            $colorRed 50%
+          );
+          background-size: 200% 100%;
+          background-position: -100%;
+          padding: 5px 0;
+          position: relative;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          transition: all 0.3s ease-in-out;
+
+          &:before {
+            content: '';
+            background: $colorViolet;
+            display: block;
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:hover {
+            background-position: 0;
+
+            &::before {
+              width: 100%;
+            }
+
+          }
+        }
       }
     }
 

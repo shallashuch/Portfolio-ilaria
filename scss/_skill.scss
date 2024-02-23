@@ -2,11 +2,14 @@
   width: 100vw;
   overflow: hidden;
   background-color: $colorBackground;
+  display: flex;
+  justify-content: center;
 
   & .myskill-container {
-    margin: 100px 120px;
+    margin: 70px 120px;
     display: flex;
     flex-direction: column;
+    width: 75%;
 
     & h1 {
       @include h1Pages;
@@ -28,8 +31,6 @@
       & .skills-small-container{
         display: flex;
         flex-wrap: wrap;
-        width: 90%;
-
 
         & .skills-icon-item {
           padding: 30px 40px;

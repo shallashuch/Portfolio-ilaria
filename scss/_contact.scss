@@ -1,9 +1,6 @@
 #contact-section {
-  width: 100vw;
-  overflow: hidden;
-  background-color: $colorBackground;
-  display: flex;
-  justify-content: center;
+  @include sectionStyle;
+  @include flexCenter(row);
 
   #{&}-container {
     width: 75%;
@@ -12,32 +9,21 @@
     & h1 {
       @include h1Pages;
       margin-bottom: 120px;
-      text-align: left !important;
+      text-align: left;
       &  span {
-        background: linear-gradient(to right, $colorRed, $colorViolet, $colorBluette);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        font-family: $fontTitle;
+        @include spanTitle;
       }
     }
   
     & .contactme-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flexCenter(column);
       
       & .contact-body {
-        display: flex;
-        flex-direction: row;
-        justify-content: center; 
+        @include flexCenter(row);
         width: 90%;
   
         & .info-contacts {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
+          @include flexCenter(column);
           flex-basis: 40%;
   
           & a {
@@ -76,9 +62,7 @@
         
         & .sendmessage-container {
           flex-basis: 60%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+          @include flexCenter(column);
   
           & h1 {
             @include h1Pages;
@@ -88,9 +72,7 @@
           }
     
           & .message-box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flexCenter(column);
             margin-top: 40px;
     
             & label {
@@ -108,12 +90,7 @@
     
                 & textarea {
                   margin-top: 20px;
-                  background-color: $colorBackground;
-                  border-bottom: 1px solid $colorBluette;
-                  border-left: 0px;
-                  border-right: 0px;
-                  border-top: 0px;
-                  background-color: $colorBackground;
+                  @include input;
                 }
               }
             }
@@ -131,11 +108,7 @@
                 & input {
                   display: block;
                   margin: 20px 0px 0px 0px;
-                  border-bottom: 1px solid $colorBluette;
-                  border-left: 0px;
-                  border-right: 0px;
-                  border-top: 0px;
-                  background-color: $colorBackground;
+                  @include input;
                 }
               }
             }

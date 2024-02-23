@@ -1,7 +1,6 @@
 .navbar-container {
   position: relative;
   .navbar-section-text {
-    // background-color: rgba(232, 230, 93, 0.16);
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -12,28 +11,29 @@
 
     & .open-btn-ctnr {
       position: absolute;
-      right: 70px;
-      display: flex;
-      justify-content: center;
+      right: 50px;
+      @include flexCenter(row);
+      background-color: rgba(232, 230, 93, 0.16);
+      padding: 20px;
+      border-radius: 15px;
     }
 
     & .menu-items {
       position: absolute;
       right: 20px;
       top: 30px;
-      background-color: $colorYellow;
+      background-color: rgba(232, 230, 93, 0.16);
       padding: 100px 30px 30px 30px;
       border-radius: 20px;
 
       & .icon-close {
         position: absolute;
         right: 55px;
-        top:20px;
+        top:40px;
       }
 
       & .menu-options-container {
         text-align: center;
-        // position: absolute;
         & a {
           text-decoration: none;
           font-weight: 600;
@@ -67,8 +67,8 @@
     right: 60px;
     top:400px;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    @include flexCenter(column);
+
 
     & .items {
       position: relative;
@@ -89,23 +89,5 @@
       }
     }
   }
-
-  // & .navbar-section-text {
-  //   padding-top: 20px;
-  //   & .clickable-text {
-  //     display: block;
-  //     position: relative;
-  //     margin: 5px 0px;
-  
-  //     & a {
-  //       text-decoration: none;
-  //       font-weight: 600;
-  //       display: block;
-  //       color: $colorRed;
-  //       font-size: 20px;
-  //       font-family: $fontSubTitle;
-  //     }
-  //   }
-  // }
 }
 

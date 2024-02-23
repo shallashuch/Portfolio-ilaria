@@ -2,32 +2,65 @@
 
 let clickableItems = document.querySelectorAll('.clickable');
 
-clickableItems.forEach(function(item) {
+function activeItem(dice) {
+  clickableItems.forEach((item) =>
+    item.classList.remove('rotate-scale-up')
+  );
+  dice.classList.toggle('rotate-scale-up');
+} 
+
+clickableItems.forEach((item) =>
   item.addEventListener('click', function() {
-    clickableItems.forEach(function (item) {
-      item.classList.remove('rotate-scale-up');
-    })
-    item.classList.toggle('rotate-scale-up');
+    activeItem(this);
   })
-})
+);
+
+//DICE SCROLLING SELECTION
+
+let sections = document.querySelectorAll('section');
+let diceIndex = 0;
+initializeDice();
+
+function initializeDice() {
+  if (clickableItems.length > 0) {
+    clickableItems[diceIndex].classList.add('rotate-scale-up');
+  } 
+}
+
+window.onscroll = () => {
+  let top = window.scrollY + window.innerHeight * 0.5;
+
+
+  sections.forEach(sec => {
+    let offset = sec.offsetTop;
+    let height = sec.offsetHeight;
+    let idSec = sec.getAttribute('id');
+
+    if (top >= offset && top < offset + height) {
+      const target = document.querySelector(`.clickable[data-target='${idSec}']`);
+      if (target) {
+        activeItem(target);
+      }
+    }
+  })
+}
 
 
 // HAMBURGER MENU
-let openButton = document.querySelector('.icon-open');
-let closeButton = document.querySelector('.icon-close');
-let menu = document.querySelector('.menu-items');
+let openButton = document.querySelector('.open-btn-ctnr');
+
+let closeButton = document.querySelector('.menu-items');
 
 function displayMenu () {
   openButton.classList.remove('show-button');
   openButton.classList.add('hide-button');
-  menu.classList.remove('hide-button');
-  menu.classList.add('show-button');
+  closeButton.classList.remove('hide-button');
+  closeButton.classList.add('show-button');
 };
 
 function closeMenu (event) {
-  menu.classList.remove('show-button');
+  closeButton.classList.remove('show-button');
   openButton.classList.remove('hide-button');
-  menu.classList.add('hide-button');
+  closeButton.classList.add('hide-button');
   openButton.classList.add('icon-open');
-  event.preventDefault();
 }

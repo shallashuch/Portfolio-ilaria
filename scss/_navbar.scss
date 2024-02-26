@@ -35,11 +35,8 @@
       & .menu-options-container {
         text-align: center;
         & a {
-          text-decoration: none;
-          font-weight: 600;
-          display: block;
-          color: $colorRed;
-          font-family: $fontSubTitle;
+          @include underlinehoverText;
+          margin: 15px 0px;
         }
       }
     }

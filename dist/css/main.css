@@ -38,11 +38,33 @@
   text-align: center;
 }
 .navbar-container .navbar-section-text .menu-items .menu-options-container a {
-  text-decoration: none;
-  font-weight: 600;
+  background-image: linear-gradient(to right, #a05de8, #a05de8 50%, #e85d5f 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  background-clip: text;
+  margin: 15px 0px;
+}
+.navbar-container .navbar-section-text .menu-items .menu-options-container a:before {
+  content: "";
+  background: #a05de8;
   display: block;
-  color: #e85d5f;
-  font-family: "Anta", sans-serif;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-container .navbar-section-text .menu-items .menu-options-container a:hover {
+  background-position: 0;
+}
+.navbar-container .navbar-section-text .menu-items .menu-options-container a:hover::before {
+  width: 100%;
 }
 .navbar-container .navbar-section-text .icon-open,
 .navbar-container .navbar-section-text .icon-close {

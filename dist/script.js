@@ -63,3 +63,17 @@ function closeMenu (event) {
   closeButton.classList.add('hide-button');
   openButton.classList.add('icon-open');
 }
+
+// CONFETTI EFFECT
+const confettiWord = document.getElementById('magic-confetti-effect');
+const canvas = document.getElementById('confetti-canvas');
+
+const jsConfetti = new JSConfetti();
+
+confettiWord.addEventListener('mouseover', () => {
+  jsConfetti.addConfetti( {
+    emojis: ['⭐️'],
+    emojiSize: 20,
+    confettiNumber: 500,
+  })
+});

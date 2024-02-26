@@ -34,7 +34,7 @@
               @include hoverText;
               color: $colorRed;
             }
-          }
+          } 
   
           & #resume-button {
             @include btn-border-drawing(#e85d5f, #a05de8, 4px, bottom, right);

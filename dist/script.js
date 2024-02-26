@@ -1,6 +1,6 @@
 // DICE ROTATION
 
-let clickableItems = document.querySelectorAll('.clickable');
+let clickableItems = document.querySelectorAll('.clickable-dice');
 
 function activeItem(dice) {
   clickableItems.forEach((item) =>
@@ -30,14 +30,13 @@ function initializeDice() {
 window.onscroll = () => {
   let top = window.scrollY + window.innerHeight * 0.5;
 
-
   sections.forEach(sec => {
     let offset = sec.offsetTop;
     let height = sec.offsetHeight;
     let idSec = sec.getAttribute('id');
 
     if (top >= offset && top < offset + height) {
-      const target = document.querySelector(`.clickable[data-target='${idSec}']`);
+      const target = document.querySelector(`.clickable-dice[data-target='${idSec}']`);
       if (target) {
         activeItem(target);
       }

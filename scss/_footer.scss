@@ -13,7 +13,7 @@ footer {
       & a {
         text-decoration: none;
         color: $colorRed;
-        @include hoverText;
+        @include underlinehoverText;
       }
     }
   }

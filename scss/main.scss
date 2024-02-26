@@ -49,8 +49,7 @@
         font-family: $fontSubTitle;
 
         & span {
-          color: $colorRed;
-          @include hoverText;
+          @include underlinehoverText;
         }
       }
     }

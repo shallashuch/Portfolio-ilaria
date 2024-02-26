@@ -99,9 +99,32 @@ footer .footer-container .opensource {
 footer .footer-container .opensource a {
   text-decoration: none;
   color: #e85d5f;
+  background-image: linear-gradient(to right, #a05de8, #a05de8 50%, #e85d5f 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  background-clip: text;
+}
+footer .footer-container .opensource a:before {
+  content: "";
+  background: #a05de8;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
 }
 footer .footer-container .opensource a:hover {
-  color: #a05de8;
+  background-position: 0;
+}
+footer .footer-container .opensource a:hover::before {
+  width: 100%;
 }
 
 #aboutme-section {
@@ -149,6 +172,7 @@ footer .footer-container .opensource a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
+  background-clip: text;
 }
 #aboutme-section .about-container .about-text p a:before {
   content: "";
@@ -353,6 +377,7 @@ footer .footer-container .opensource a:hover {
 }
 #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container .project-skill-item i {
   font-size: 30px;
+  color: #e85d5f;
   color: #5d62e8;
 }
 #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container .project-skill-item i:hover {
@@ -491,6 +516,7 @@ footer .footer-container .opensource a:hover {
   cursor: pointer;
   padding: 20px;
   border-radius: 10px;
+  font-size: 20px;
 }
 #contact-section #contact-section-container .contactme-container .contact-body .info-contacts #resume-button::before, #contact-section #contact-section-container .contactme-container .contact-body .info-contacts #resume-button::after {
   border: 0 solid transparent;
@@ -529,14 +555,6 @@ footer .footer-container .opensource a:hover {
 }
 #contact-section #contact-section-container .contactme-container .contact-body .info-contacts #resume-button:focus {
   outline: 2px solid #a05de8;
-}
-#contact-section #contact-section-container .contactme-container .contact-body .info-contacts #resume-button a {
-  text-decoration: none;
-  font-size: 20px;
-  color: #e85d5f;
-}
-#contact-section #contact-section-container .contactme-container .contact-body .info-contacts #resume-button a:hover {
-  color: #a05de8;
 }
 #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container {
   flex-basis: 60%;
@@ -599,23 +617,57 @@ footer .footer-container .opensource a:hover {
   border-right: 0px;
   border-top: 0px;
 }
-#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message {
-  margin-top: 50px;
-  text-decoration: none;
-  color: #5d62e8;
-  border: 2px solid #5d62e8;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 10px;
-  font-size: 15px;
-  font-weight: 900;
-  border-radius: 10px;
-  cursor: pointer;
-}
-#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message:hover {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button {
+  box-shadow: inset 0 0 0 4px #e85d5f;
   color: #e85d5f;
-  background-color: #e8e65d;
-  border: 2px solid #e85d5f;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+  border-radius: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 30px;
+  font-size: 15px;
+}
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button::before, #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 10px;
+  bottom: 0;
+  right: 0;
+}
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button:hover {
+  color: #a05de8;
+}
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button:hover::before, #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button:hover::after {
+  border-color: #a05de8;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
+}
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button:focus {
+  outline: 2px solid #a05de8;
 }
 
 * {
@@ -662,8 +714,30 @@ footer .footer-container .opensource a:hover {
   font-family: "Anta", sans-serif;
 }
 #presentation-section .hero-container .hero p span {
-  color: #e85d5f;
+  background-image: linear-gradient(to right, #a05de8, #a05de8 50%, #e85d5f 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  background-clip: text;
+}
+#presentation-section .hero-container .hero p span:before {
+  content: "";
+  background: #a05de8;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
 }
 #presentation-section .hero-container .hero p span:hover {
-  color: #a05de8;
+  background-position: 0;
+}
+#presentation-section .hero-container .hero p span:hover::before {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

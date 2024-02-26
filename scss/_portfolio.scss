@@ -40,11 +40,8 @@
 
             & i {
               font-size: 30px;
+              @include icon-hover;
               color: $colorBluette;
-    
-              &:hover {
-                color: $colorViolet;
-              }
             }
             & svg {
               &:hover {
@@ -88,11 +85,7 @@
               margin-top: 40px;
               & i {
                 font-size: 30px;
-                color: $colorRed;
-
-                &:hover {
-                  color: $colorViolet;
-                }
+                @include icon-hover;
               }
             }
           }

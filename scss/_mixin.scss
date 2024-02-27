@@ -197,6 +197,11 @@
   border-top: 0px;
 }
 
+@mixin media-sm {
+  @media (max-width: 429px) {
+    @content;
+  }
+}
 
 @mixin media-md {
   @media (min-width: 430px) and (max-width: 629px) {
@@ -216,13 +221,19 @@
   }
 }
 
+@mixin media-grid {
+  @media (min-width: 900px) and (max-width: 1050px) {
+    @content;
+  }
+}
+
 @mixin media-xl {
   @media (min-width: 900px) and (max-width: 1150px) {
     @content;
   }
 }
 
-@mixin media-title {
+@mixin media-xxl {
   @media (min-width: 1151px) and (max-width: 1550px) {
     @content;
   }

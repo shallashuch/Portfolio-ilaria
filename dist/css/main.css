@@ -276,8 +276,8 @@ footer .footer-container .opensource a:hover::before {
   margin-top: 30px;
 }
 #myskill-section .myskill-container .skills-icon-container .skills-small-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 #myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item {
   padding: 30px 40px;
@@ -774,16 +774,25 @@ footer .footer-container .opensource a:hover::before {
   #presentation-section .hero-container .hero p {
     width: 80%;
   }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container .project-content-description .project-content-link {
+    width: 35%;
+  }
 }
 @media (min-width: 900px) and (max-width: 1150px) {
   #presentation-section .hero-container .hero p {
     width: 90%;
+  }
+  #aboutme-section .about-container {
+    width: 65%;
   }
   #aboutme-section .about-container .about-text p {
     font-size: 20px;
   }
   #aboutme-section .about-container .about-photo {
     height: 250px;
+  }
+  #myskill-section .myskill-container {
+    width: 65%;
   }
   #myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-icon i {
     font-size: 70px;
@@ -816,7 +825,7 @@ footer .footer-container .opensource a:hover::before {
     font-size: 25px;
   }
   #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container .project-content-description .project-content-link {
-    width: 25%;
+    width: 45%;
   }
   #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container .project-content-description .project-content-link i {
     font-size: 20px;
@@ -824,6 +833,7 @@ footer .footer-container .opensource a:hover::before {
 }
 @media (max-width: 899px) {
   #portfolio-section .portfolio-container {
+    width: 65%;
     margin-top: 0px;
   }
   #portfolio-section .portfolio-container .portfolio-project-container {
@@ -868,6 +878,11 @@ footer .footer-container .opensource a:hover::before {
     left: 15px;
     top: 30px;
     margin: 0px;
+  }
+}
+@media (min-width: 900px) and (max-width: 1050px) {
+  #myskill-section .myskill-container .skills-icon-container .skills-small-container {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 @media (min-width: 630px) and (max-width: 899px) {
@@ -932,6 +947,9 @@ footer .footer-container .opensource a:hover::before {
   #myskill-section .myskill-container h1 {
     font-size: 47px;
     margin-bottom: 50px;
+  }
+  #myskill-section .myskill-container .skills-icon-container .skills-small-container {
+    grid-template-columns: repeat(3, 1fr);
   }
   #myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-icon i {
     font-size: 50px;
@@ -1092,6 +1110,9 @@ footer .footer-container .opensource a:hover::before {
     font-size: 30px;
     margin-bottom: 40px;
   }
+  #myskill-section .myskill-container .skills-icon-container .skills-small-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
   #myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-icon i {
     font-size: 30px;
   }
@@ -1211,5 +1232,207 @@ footer .footer-container .opensource a:hover::before {
   }
   footer .footer-container .opensource {
     margin-top: 20px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 429px) {
+  #presentation-section .hero-container .hero h1 {
+    font-size: 32px;
+  }
+  #presentation-section .hero-container .hero p {
+    font-size: 12px;
+    width: 80%;
+  }
+  .navbar-container .navbar-section-text {
+    padding: 25px 5px;
+    font-size: 12px;
+  }
+  .navbar-container .navbar-section-text .logo svg {
+    height: 20px;
+    width: 40px;
+  }
+  .navbar-container .navbar-section-text .open-btn-ctnr {
+    padding: 5px;
+    right: 10px;
+  }
+  .navbar-container .navbar-section-text .menu-items {
+    padding: 60px 5px 10px 5px;
+    right: -2px;
+  }
+  .navbar-container .navbar-section-text .menu-items .icon-close {
+    right: 20px;
+    top: 5px;
+  }
+  .navbar-container .navbar-section-text .icon-open,
+  .navbar-container .navbar-section-text .icon-close {
+    font-size: 20px;
+  }
+  .navbar-container .navbar-section-dice {
+    padding: 5px;
+    right: 10px;
+  }
+  .navbar-container .navbar-section-dice .items a .clickable {
+    font-size: 8px;
+  }
+  .navbar-container .navbar-section-dice .items a .rotate-scale-up {
+    font-size: 20px;
+  }
+  #aboutme-section .about-container {
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #aboutme-section .about-container .about-text {
+    margin-bottom: 20px;
+  }
+  #aboutme-section .about-container .about-text h1 {
+    font-size: 23px;
+    margin-bottom: 30px;
+  }
+  #aboutme-section .about-container .about-text p {
+    font-size: 12px;
+  }
+  #aboutme-section .about-container .about-photo {
+    height: 150px;
+    width: 150px;
+    flex-basis: auto;
+    margin: 0px;
+  }
+  #myskill-section .myskill-container h1 {
+    font-size: 23px;
+    margin-bottom: 30px;
+  }
+  #myskill-section .myskill-container .skills-icon-container .skills-small-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-icon i {
+    font-size: 40px;
+  }
+  #myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-icon svg {
+    width: 40px;
+    height: 40px;
+  }
+  #myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-description {
+    font-size: 15px;
+  }
+  #portfolio-section .portfolio-container {
+    margin: 0px 120px 70px 120px;
+  }
+  #portfolio-section .portfolio-container h1 {
+    font-size: 23px;
+    margin-bottom: 30px;
+  }
+  #portfolio-section .portfolio-container p {
+    font-size: 12px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container {
+    margin-top: 30px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item {
+    margin-bottom: 30px;
+    width: 90%;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container {
+    padding: 2px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container .project-skill-item {
+    margin-bottom: 0px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container .project-skill-item i {
+    font-size: 10px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container .project-skill-item svg {
+    width: 11px;
+    height: 11px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item #pastas-skills {
+    left: -30px;
+    top: -20px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item #notes-skills {
+    left: -30px;
+    top: -20px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-foto-container {
+    width: 100px;
+    height: 100px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container h3 {
+    font-size: 15px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container .project-content-description .project-content-link i {
+    font-size: 15px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container #weather-project-item #weather-skills {
+    left: -25px;
+    top: -10px;
+  }
+  #contact-section #contact-section-container {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 50px;
+  }
+  #contact-section #contact-section-container h1 {
+    font-size: 20px;
+    margin: 0px 0px 30px 120px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .info-contacts a {
+    margin-bottom: 10px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .info-contacts a i {
+    font-size: 20px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .info-contacts #resume-button {
+    padding: 10px;
+    font-size: 15px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container {
+    width: 80%;
+    margin-bottom: 50px;
+    align-items: flex-start;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container h1 {
+    font-size: 20px;
+    margin-left: 0px;
+    text-align: start;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box {
+    margin-top: 20px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box label {
+    font-size: 14px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box input {
+    margin: 10px 0px 0px 0px;
+    font-size: 14px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box .personal-info {
+    margin-bottom: 20px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box .second-row-message {
+    margin-top: 10px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box .second-row-message .personal-message textarea {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button {
+    font-size: 12px;
+  }
+  footer {
+    padding-top: 20px;
+  }
+  footer .footer-container {
+    padding: 40px 30px;
+  }
+  footer .footer-container .opensource {
+    margin-top: 20px;
+    font-size: 12px;
   }
 }/*# sourceMappingURL=main.css.map */

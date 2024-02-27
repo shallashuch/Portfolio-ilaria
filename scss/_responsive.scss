@@ -1,9 +1,24 @@
-@include media-title {
+@include media-xxl {
   #presentation-section {
     & .hero-container {
       & .hero {
         & p {
           width: 80%;
+        }
+      }
+    }
+  }
+  #portfolio-section {
+    & .portfolio-container {
+      & .portfolio-project-container {
+        & .portfolio-project-item {
+          & .project-content-container {
+            & .project-content-description {
+              & .project-content-link {
+                width: 35%;
+              }
+            }
+          }
         }
       }
     }
@@ -22,6 +37,7 @@
   }
   #aboutme-section {
     & .about-container {
+      width: 65%;
       & .about-text {
         & p {
           font-size: 20px;
@@ -35,6 +51,7 @@
 
   #myskill-section {
     & .myskill-container {
+      width: 65%;
       & .skills-icon-container {
         & .skills-small-container {
           & .skills-icon-item {
@@ -85,7 +102,7 @@
             }
             & .project-content-description {
               & .project-content-link {
-                width: 25%;
+                width: 45%;
                 & i {
                   font-size: 20px;
                 }
@@ -101,6 +118,7 @@
 @include media-portfolio-899 {
   #portfolio-section {
     & .portfolio-container {
+      width: 65%;
       margin-top: 0px;
       & .portfolio-project-container {
         margin-top: 30px;
@@ -141,6 +159,18 @@
             top: 30px;
             margin: 0px;
           }
+        }
+      }
+    }
+  }
+}
+
+@include media-grid {
+  #myskill-section {
+    & .myskill-container {
+      & .skills-icon-container {
+        & .skills-small-container {
+          grid-template-columns: repeat(4, 1fr);
         }
       }
     }
@@ -227,6 +257,7 @@
       }
       & .skills-icon-container {
         & .skills-small-container {
+          grid-template-columns: repeat(3, 1fr);
           & .skills-icon-item {
             & .skill-icon {
               & i {
@@ -433,6 +464,7 @@
       }
       & .skills-icon-container {
         & .skills-small-container {
+          grid-template-columns: repeat(2, 1fr);
           & .skills-icon-item {
             & .skill-icon {
               & i {
@@ -578,6 +610,254 @@
       padding: 40px 30px;
       & .opensource {
         margin-top: 20px;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@include media-sm {
+  #presentation-section {
+    & .hero-container {
+      & .hero {
+        & h1 {
+          font-size: 32px;
+        }
+        & p {
+          font-size: 12px;
+          width: 80%;
+        }
+      }
+    }
+  }
+  .navbar-container{
+    .navbar-section-text {
+      padding: 25px 5px;
+      font-size: 12px;
+      & .logo {
+        svg {
+          height: 20px;
+          width: 40px;
+        }
+      }
+      & .open-btn-ctnr {
+        padding: 5px;
+        right: 10px;
+      }
+      & .menu-items {
+        padding: 60px 5px 10px 5px; 
+        right: -2px;
+        & .icon-close {
+          right: 20px;
+          top:5px;
+        }
+      }
+      .icon-open,
+      .icon-close {
+        font-size: 20px;
+      }
+    }  
+    & .navbar-section-dice {
+      padding: 5px;
+      right: 10px;
+      & .items {
+        & a {
+          & .clickable {
+            font-size: 8px;
+          }
+          & .rotate-scale-up {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  #aboutme-section {
+    & .about-container {
+      margin-bottom: 0px;
+      @include flexCenter(column);
+      & .about-text {
+        margin-bottom: 20px;
+        & h1 {
+          font-size: 23px;
+          margin-bottom: 30px;
+        }
+        & p {
+          font-size: 12px;
+        }
+      }
+      & .about-photo {
+        height: 150px;
+        width: 150px;
+        flex-basis: auto;
+        margin: 0px;
+      }
+    }
+  }
+
+  #myskill-section {
+    & .myskill-container {
+      & h1 {
+        font-size: 23px;
+        margin-bottom: 30px;
+      }
+      & .skills-icon-container {
+        & .skills-small-container {
+          grid-template-columns: repeat(1, 1fr);
+          & .skills-icon-item {
+            & .skill-icon {
+              & i {
+                font-size: 40px;
+              }
+              & svg {
+                width:40px; 
+                height: 40px;
+              }
+            }
+            & .skill-description {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #portfolio-section {
+    & .portfolio-container {
+      margin: 0px 120px 70px 120px;
+      & h1 {
+        font-size: 23px;
+        margin-bottom: 30px;
+      }
+      & p {
+        font-size: 12px;
+      }
+      & .portfolio-project-container {
+        margin-top: 30px;
+        & .portfolio-project-item {
+          margin-bottom: 30px;
+          width: 90%;
+          & .project-skills-container {
+            padding: 2px;
+            & .project-skill-item {
+              margin-bottom: 0px;
+              i {
+                font-size: 10px;
+              }
+              & svg {
+                width: 11px;
+                height: 11px;
+              }
+            }
+          }
+          & #pastas-skills {
+            left: -30px;
+            top: -20px;
+          }
+          & #notes-skills {
+            left: -30px;
+            top: -20px;
+          }
+          & .project-foto-container {
+            width: 100px;
+            height: 100px;
+          }
+          & .project-content-container {
+            & h3 {
+              font-size: 15px;
+            }
+            & .project-content-description {
+              & .project-content-link {
+                & i {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+        & #weather-project-item {
+          & #weather-skills {
+            left: -25px;
+            top: -10px;
+          }
+        }
+      }
+    }
+  }
+  #contact-section {
+    #{&}-container {
+      width: 100%;
+      margin: 0px;
+      margin-bottom: 50px;
+      & h1 {
+        font-size: 20px;
+        margin:0px 0px 30px 120px;
+      }
+      & .contactme-container {
+        & .contact-body {
+          flex-direction: column-reverse;
+          width: 100%;
+          & .info-contacts {  
+            & a {
+              margin-bottom: 10px;
+              & i {
+                font-size: 20px;
+              }
+            } 
+            & #resume-button {
+              padding: 10px;
+              font-size: 15px;
+            }
+          }
+          & .sendmessage-container {
+            width: 80%;
+            margin-bottom: 50px;
+            align-items: flex-start;
+            & h1 {
+              font-size: 20px;
+              margin-left: 0px;
+              text-align: start;
+            }
+            & .message-box {  
+              margin-top: 20px; 
+              & label {
+                font-size: 14px;
+              } 
+              & input {
+                margin: 10px 0px 0px 0px;
+                font-size: 14px;
+              }  
+              & .personal-info {
+                margin-bottom: 20px;
+              }
+              & .second-row-message {
+                margin-top: 10px;
+              & .personal-message {
+                & textarea {
+                  margin-top: 10px;
+                  font-size: 14px;
+                }
+              }
+              }
+              & #send-message-button {
+                font-size: 12px;
+              }
+            }
+          }  
+        }
+      }  
+    }
+  }
+
+  footer {
+    padding-top: 20px;
+    & .footer-container {
+      padding: 40px 30px;
+      & .opensource {
+        margin-top: 20px;
+        font-size: 12px;
       }
     }
   }

@@ -72,8 +72,8 @@ const jsConfetti = new JSConfetti();
 
 confettiWord.addEventListener('mouseover', () => {
   jsConfetti.addConfetti( {
-    emojis: ['⭐️'],
+    emojis: ['⭐️','🌟','✨'],
     emojiSize: 20,
-    confettiNumber: 500,
+    confettiNumber: 1000,
   })
 });

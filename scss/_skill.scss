@@ -45,6 +45,8 @@
             }
   
             & svg {
+              width:100px; 
+              height: 100px;
               @include svgSkills;
               &:hover {
                 @include hoversvgSkills;

@@ -34,6 +34,7 @@
           border: 2px solid transparent;
           border-image: $borderGradient 1;
           border-image-slice: 1;
+          flex-basis: 5%;
 
           & .project-skill-item {
             margin-bottom: 15px;
@@ -44,11 +45,17 @@
               color: $colorBluette;
             }
             & svg {
+              width: 35px;
+              height: 35px;
               &:hover {
                 fill: #a05de8;
               }
             }
           }
+        }
+
+        & #weather-skills {
+          margin-left: 40px;
         }
 
         & .project-foto-container {
@@ -67,8 +74,8 @@
         }
 
         & .project-content-container {
-          width: 50%;
           margin-left: 50px;
+          flex-basis: 50%;
 
           & h3 {
             @include h3Pages;

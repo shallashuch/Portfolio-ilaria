@@ -7,7 +7,7 @@
     display: flex;
 
     & .about-text {
-      width: 60%;
+      flex-basis: 60%;
 
       & h1 {
         @include h1Pages;
@@ -30,7 +30,7 @@
     & .about-photo {
       padding: 0;
       height: 350px;
-      width: 25%;
+      flex-basis: 25%;
       background-image: url(/images/foto.jpg);
       @include overlayContainer;
       margin: 100px 0px 0px 60px;

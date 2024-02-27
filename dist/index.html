@@ -56,11 +56,11 @@
         <div class="hero">
           <h1>FRONT-END <br /> DEVELOPER</h1>
           <p>
-            Welcome, I'm <span>Ilaria</span>, a coding enthusiast who pivoted from Psychology <br />to Web Development. Now, I'm here to turn pixels into <span id="magic-confetti-effect">magic</span>
+            Welcome, I'm <span>Ilaria</span>, a coding enthusiast who pivoted from Psychology to Web Development. Now, I'm here to turn pixels into <span id="magic-confetti-effect">magic</span>
           </p>
-          <canvas id="confetti-canvas"></canvas>
         </div>
       </div>
+      <canvas id="confetti-canvas"></canvas>
     </section>
     <!-- ABOUT ME -->
     <section id="aboutme-section">
@@ -89,8 +89,8 @@
     <section id="myskill-section">
       <div class="myskill-container">
         <h1><span>SKILLS</span></h1>
-       <div class="skills-icon-container">
-         <div class="skills-small-container">
+        <div class="skills-icon-container">
+          <div class="skills-small-container">
             <div class="skills-icon-item">
               <div class="skill-icon">
                 <i class="fa-brands fa-html5"></i>
@@ -116,8 +116,6 @@
                   viewBox="0 0 64 80" 
                   x="0px" 
                   y="0px"
-                  width="100px" 
-                  height="100px" 
                   fill="url(#flexbox)">
                   <defs>
                     <linearGradient id="flexbox" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -155,8 +153,6 @@
                   viewBox="0 0 512 640" 
                   x="0px" 
                   y="0px"fgdrf
-                  width="100px" 
-                  height="100px" 
                   fill="url(#responsive)">
                   <defs>
                     <linearGradient id="responsive" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -200,8 +196,6 @@
               <div class="skill-icon jquery">
                 <?xml version="1.0" encoding="utf-8"?>
                 <svg 
-                  width="100px" 
-                  height="100px" 
                   viewBox="0 0 24 24" 
                   xmlns="http://www.w3.org/2000/svg"
                   fill="url(#JQuery)"
@@ -223,8 +217,6 @@
                   xmlns="http://www.w3.org/2000/svg" 
                   x="0px" 
                   y="0px" 
-                  width="100" 
-                  height="100" 
                   viewBox="0 0 50 50"
                   fill="url(#typescript)">
                   <defs>
@@ -250,8 +242,6 @@
                 viewBox="0 0 90 81.125" 
                 enable-background="new 0 0 90 64.9" 
                 xml:space="preserve"
-                width="100px" 
-                height="100px" 
                 fill="url(#terminal)">
                 <defs>
                   <linearGradient id="terminal" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -300,8 +290,6 @@
               <div class="skill-icon">
                 <?xml version="1.0" encoding="utf-8"?>
                 <svg 
-                  width="100px" 
-                  height="100px" 
                   viewBox="0 0 32 32" 
                   xmlns="http://www.w3.org/2000/svg"
                   fill="url(#canva)">
@@ -327,7 +315,7 @@
         <p>Throughout my coding journey, I dove into the creation of "mock websites" to put theoretical understanding into practice and experiment with new techniques. My portfolio showcases examples of these projects. Although they aren't actual live websites, they function as creative templates that could be requested by a business.</p>
         <div class="portfolio-project-container">
           <div class="portfolio-project-item">
-            <div class="project-skills-container">
+            <div class="project-skills-container" id="pastas-skills">
               <div class="project-skill-item">
                 <i class="fa-brands fa-html5"></i>
               </div>
@@ -339,9 +327,7 @@
                   xmlns="http://www.w3.org/2000/svg" 
                   viewBox="0 0 64 80" 
                   x="0px" 
-                  y="0px"
-                  width="35px" 
-                  height="35px" 
+                  y="0px" 
                   fill="#5d62e8">
                   <g>
                     <path d="M60,8.14H4a1,1,0,0,0-1,1V54.86a1,1,0,0,0,1,1H60a1,1,0,0,0,1-1V9.14A1,1,0,0,0,60,8.14ZM59,53.86H5V10.14H59Z"/>
@@ -370,8 +356,6 @@
                   viewBox="0 0 512 640" 
                   x="0px" 
                   y="0px"
-                  width="35px" 
-                  height="35px" 
                   fill="#5d62e8">
                   <path d="M244.5,144.26h-57a7.5,7.5,0,0,0,0,15h57a7.5,7.5,0,0,0,0-15Z"/>
                   <path d="M244.5,114.26h-57a7.5,7.5,0,0,0,0,15h57a7.5,7.5,0,1,0,0-15Z"/>
@@ -422,7 +406,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio-project-item">
+          <div class="portfolio-project-item" id="weather-project-item">
             <div class="project-content-container" id="wheather-app-content" style="margin-left: 0px;">
               <h3>Weather app</h3>
               <div class="project-content-description">
@@ -446,7 +430,7 @@
                 <div class="project-photo-overlay"></div>
               </div>
             </a>
-            <div class="project-skills-container" style="margin-left: 40px;">
+            <div class="project-skills-container" id="weather-skills">
               <div class="project-skill-item">
                 <i class="fa-brands fa-html5"></i>
               </div>
@@ -459,8 +443,6 @@
                   viewBox="0 0 64 80" 
                   x="0px" 
                   y="0px"
-                  width="35px" 
-                  height="35px" 
                   fill="#5d62e8">
                   <g>
                     <path d="M60,8.14H4a1,1,0,0,0-1,1V54.86a1,1,0,0,0,1,1H60a1,1,0,0,0,1-1V9.14A1,1,0,0,0,60,8.14ZM59,53.86H5V10.14H59Z"/>
@@ -486,8 +468,6 @@
                   viewBox="0 0 512 640" 
                   x="0px" 
                   y="0px"
-                  width="35px" 
-                  height="35px" 
                   fill="#5d62e8">
                   <path d="M244.5,144.26h-57a7.5,7.5,0,0,0,0,15h57a7.5,7.5,0,0,0,0-15Z"/>
                   <path d="M244.5,114.26h-57a7.5,7.5,0,0,0,0,15h57a7.5,7.5,0,1,0,0-15Z"/>
@@ -516,7 +496,7 @@
             </div>
           </div>
           <div class="portfolio-project-item">
-            <div class="project-skills-container">
+            <div class="project-skills-container" id="notes-skills">
               <div class="project-skill-item">
                 <i class="fa-brands fa-html5"></i>
               </div>
@@ -529,8 +509,6 @@
                   viewBox="0 0 64 80" 
                   x="0px" 
                   y="0px"
-                  width="35px" 
-                  height="35px" 
                   fill="#5d62e8">
                   <g>
                     <path d="M60,8.14H4a1,1,0,0,0-1,1V54.86a1,1,0,0,0,1,1H60a1,1,0,0,0,1-1V9.14A1,1,0,0,0,60,8.14ZM59,53.86H5V10.14H59Z"/>
@@ -556,8 +534,6 @@
                   viewBox="0 0 512 640" 
                   x="0px" 
                   y="0px"
-                  width="35px" 
-                  height="35px" 
                   fill="#5d62e8">
                   <path d="M244.5,144.26h-57a7.5,7.5,0,0,0,0,15h57a7.5,7.5,0,0,0,0-15Z"/>
                   <path d="M244.5,114.26h-57a7.5,7.5,0,0,0,0,15h57a7.5,7.5,0,1,0,0-15Z"/>

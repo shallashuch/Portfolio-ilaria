@@ -1,0 +1,584 @@
+@include media-title {
+  #presentation-section {
+    & .hero-container {
+      & .hero {
+        & p {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@include media-xl {
+  #presentation-section {
+    & .hero-container {
+      & .hero {
+        & p {
+          width: 90%;
+        }
+      }
+    }
+  }
+  #aboutme-section {
+    & .about-container {
+      & .about-text {
+        & p {
+          font-size: 20px;
+        }
+      }
+      & .about-photo {
+        height: 250px;
+      }
+    }
+  }
+
+  #myskill-section {
+    & .myskill-container {
+      & .skills-icon-container {
+        & .skills-small-container {
+          & .skills-icon-item {
+            & .skill-icon {
+              & i {
+                font-size: 70px;
+              }
+              & svg {
+                width:70px; 
+                height: 70px;
+              }
+            }
+            & .skill-description {
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #portfolio-section {
+    & .portfolio-container {
+      width: 65%;
+      & p {
+        font-size: 18px;
+      }
+      & .portfolio-project-container {
+        & .portfolio-project-item {
+          & .project-skills-container {
+            & .project-skill-item {
+              i {
+                font-size: 20px;
+              }
+              & svg {
+                width: 25px;
+                height: 25px;
+              }
+            }
+          }
+          & .project-foto-container {
+            width: 300px;
+            height: 300px;
+          }
+          & .project-content-container {
+            & h3 {
+              font-size: 25px;
+            }
+            & .project-content-description {
+              & .project-content-link {
+                width: 25%;
+                & i {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-portfolio-899 {
+  #portfolio-section {
+    & .portfolio-container {
+      margin-top: 0px;
+      & .portfolio-project-container {
+        margin-top: 30px;
+        & .portfolio-project-item {
+          flex-direction: column;
+          position: relative;
+
+          & .project-skills-container {
+            position: absolute;
+          }
+          & #pastas-skills {
+            left: 15px;
+            top: 20px;
+          }
+          & #notes-skills {
+            left: 15px;
+            top: 30px;
+          }
+          & .project-content-container {
+            margin: 50px 0px 0px 0px;
+          }
+
+          & .project-content-container {
+            & .project-content-description {
+              @include flexCenter(column);
+              & .project-content-link {
+                @include flexCenter(row);
+                width: 40%;
+                justify-content: space-between;
+              }
+            }
+          }
+        }
+        & #weather-project-item {
+          flex-direction: column-reverse;
+          & #weather-skills {
+            left: 15px;
+            top: 30px;
+            margin: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-lg {
+  #presentation-section {
+    & .hero-container {
+      & .hero {
+        & h1 {
+          font-size: 60px;
+        }
+        & p {
+          font-size: 20px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .navbar-container{
+    .navbar-section-text {
+      padding: 35px 15px;
+      font-size: 15px;
+      & .open-btn-ctnr {
+        padding: 15px;
+        right: 40px;
+      }
+      & .menu-items {
+        padding: 80px 20px 20px 20px;  
+        & .icon-close {
+          right: 40px;
+          top:25px;
+        }
+      }
+      .icon-open,
+      .icon-close {
+        font-size: 25px;
+      }
+    }  
+    & .navbar-section-dice {
+      padding: 15px;
+      right: 45px;
+      & .items {
+        & a {
+          & .clickable {
+            font-size: 18px;
+          }
+          & .rotate-scale-up {
+            font-size: 27px;
+          }
+        }
+      }
+    }
+  }
+
+  #aboutme-section {
+    & .about-container {
+      @include flexCenter(column);
+      & .about-text {
+        margin-bottom: 40px;
+        & h1 {
+          font-size: 47px;
+          margin-bottom: 50px;
+        }
+        & p {
+          font-size: 18px;
+        }
+      }
+      & .about-photo {
+        height: 300px;
+        width: 300px;
+        flex-basis: auto;
+        margin: 0px;
+      }
+    }
+  }
+
+  #myskill-section {
+    & .myskill-container {
+      & h1 {
+        font-size: 47px;
+        margin-bottom: 50px;
+      }
+      & .skills-icon-container {
+        & .skills-small-container {
+          & .skills-icon-item {
+            & .skill-icon {
+              & i {
+                font-size: 50px;
+              }
+              & svg {
+                width:50px; 
+                height: 50px;
+              }
+            }
+            & .skill-description {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #portfolio-section {
+    & .portfolio-container {
+      width: 60%;
+      margin-top: 0px;
+      & h1 {
+        font-size: 47px;
+        margin-bottom: 50px;
+      }
+      & p {
+        font-size: 16px;
+      }
+      & .portfolio-project-container {
+        margin-top: 50px;
+        & .portfolio-project-item {
+          margin-bottom: 60px;
+          & .project-skills-container {
+            & .project-skill-item {
+              i {
+                font-size: 17px;
+              }
+              & svg {
+                width: 19px;
+                height: 19px;
+              }
+            }
+          }
+          & .project-foto-container {
+            width: 270px;
+            height: 270px;
+          }
+          & .project-content-container {
+            & h3 {
+              font-size: 22px;
+            }
+            & .project-content-description {
+              & .project-content-link {
+                & i {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #contact-section {
+    #{&}-container {
+      width: 90%;
+      margin: 0px 10px 100px 10px;
+      & h1 {
+        font-size: 47px;
+        margin-bottom: 50px;
+      }
+      & .contactme-container {
+        & .contact-body {
+          width: 100%;
+          & .info-contacts {  
+            flex-basis: 20%;
+            & a {
+              margin-bottom: 20px;
+              & i {
+                font-size: 30px;
+              }
+            } 
+            & #resume-button {
+              padding: 10px;
+              font-size: 15px;
+            }
+          }
+          & .sendmessage-container {
+            width: 50%;
+            & h1 {
+              font-size: 20px;
+            }
+            & .message-box {   
+              & label {
+                font-size: 14px;
+              } 
+              & input {
+                margin: 10px 0px 0px 0px;
+                font-size: 14px;
+              }  
+              & .personal-info {
+                margin-bottom: 20px;
+              }
+              & .second-row-message {
+                margin-top: 10px;
+              & .personal-message {
+                & textarea {
+                  margin-top: 10px;
+                  font-size: 14px;
+                }
+              }
+              }
+              & #send-message-button {
+                font-size: 12px;
+              }
+            }
+          }  
+        }
+      }  
+    }
+  }
+}
+
+@include media-md {
+  #presentation-section {
+    & .hero-container {
+      & .hero {
+        & h1 {
+          font-size: 45px;
+        }
+        & p {
+          font-size: 15px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .navbar-container{
+    .navbar-section-text {
+      padding: 25px 5px;
+      font-size: 12px;
+      & .open-btn-ctnr {
+        padding: 10px;
+        right: 40px;
+      }
+      & .menu-items {
+        padding: 60px 10px 10px 10px;  
+        & .icon-close {
+          right: 30px;
+          top:10px;
+        }
+      }
+      .icon-open,
+      .icon-close {
+        font-size: 20px;
+      }
+    }  
+    & .navbar-section-dice {
+      padding: 10px;
+      right: 40px;
+      & .items {
+        & a {
+          & .clickable {
+            font-size: 10px;
+          }
+          & .rotate-scale-up {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  #aboutme-section {
+    & .about-container {
+      margin-bottom: 0px;
+      @include flexCenter(column);
+      & .about-text {
+        margin-bottom: 30px;
+        & h1 {
+          font-size: 30px;
+          margin-bottom: 40px;
+        }
+        & p {
+          font-size: 15px;
+        }
+      }
+      & .about-photo {
+        height: 200px;
+        width: 200px;
+        flex-basis: auto;
+        margin: 0px;
+      }
+    }
+  }
+
+  #myskill-section {
+    & .myskill-container {
+      & h1 {
+        font-size: 30px;
+        margin-bottom: 40px;
+      }
+      & .skills-icon-container {
+        & .skills-small-container {
+          & .skills-icon-item {
+            & .skill-icon {
+              & i {
+                font-size: 30px;
+              }
+              & svg {
+                width:30px; 
+                height: 30px;
+              }
+            }
+            & .skill-description {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #portfolio-section {
+    & .portfolio-container {
+      width: 55%;
+      & h1 {
+        font-size: 30px;
+        margin-bottom: 40px;
+      }
+      & p {
+        font-size: 14px;
+      }
+      & .portfolio-project-container {
+        margin-top: 40px;
+        & .portfolio-project-item {
+          margin-bottom: 40px;
+          & .project-skills-container {
+            padding: 5px;
+            & .project-skill-item {
+              margin-bottom: 3px;
+              i {
+                font-size: 14px;
+              }
+              & svg {
+                width: 15px;
+                height: 15px;
+              }
+            }
+          }
+          & #pastas-skills {
+            left: -30px;
+            top: 10px;
+          }
+          & #notes-skills {
+            left: -30px;
+            top: 10px;
+          }
+          & .project-foto-container {
+            width: 200px;
+            height: 200px;
+          }
+          & .project-content-container {
+            & h3 {
+              font-size: 18px;
+            }
+            & .project-content-description {
+              & .project-content-link {
+                & i {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+        & #weather-project-item {
+          & #weather-skills {
+            left: -25px;
+            top: 20px;
+          }
+        }
+      }
+    }
+  }
+  #contact-section {
+    #{&}-container {
+      width: 100%;
+      margin: 0px 10px 80px 10px;
+      & h1 {
+        font-size: 30px;
+        margin-bottom: 40px;
+      }
+      & .contactme-container {
+        & .contact-body {
+          width: 100%;
+          & .info-contacts {  
+            flex-basis: 10%;
+            & a {
+              margin-bottom: 10px;
+              & i {
+                font-size: 30px;
+              }
+            } 
+            & #resume-button {
+              padding: 10px;
+              font-size: 15px;
+            }
+          }
+          & .sendmessage-container {
+            width: 50%;
+            & h1 {
+              font-size: 20px;
+            }
+            & .message-box {   
+              & label {
+                font-size: 14px;
+              } 
+              & input {
+                margin: 10px 0px 0px 0px;
+                font-size: 14px;
+              }  
+              & .personal-info {
+                margin-bottom: 20px;
+              }
+              & .second-row-message {
+                margin-top: 10px;
+              & .personal-message {
+                & textarea {
+                  margin-top: 10px;
+                  font-size: 14px;
+                }
+              }
+              }
+              & #send-message-button {
+                font-size: 12px;
+              }
+            }
+          }  
+        }
+      }  
+    }
+  }
+
+  footer {
+    padding-top: 20px;
+    & .footer-container {
+      padding: 40px 30px;
+      & .opensource {
+        margin-top: 20px;
+      }
+    }
+  }
+}

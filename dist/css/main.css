@@ -164,7 +164,7 @@ footer .footer-container .opensource a:hover::before {
   display: flex;
 }
 #aboutme-section .about-container .about-text {
-  width: 60%;
+  flex-basis: 60%;
 }
 #aboutme-section .about-container .about-text h1 {
   font-size: 60px;
@@ -216,7 +216,7 @@ footer .footer-container .opensource a:hover::before {
 #aboutme-section .about-container .about-photo {
   padding: 0;
   height: 350px;
-  width: 25%;
+  flex-basis: 25%;
   background-image: url(/images/foto.jpg);
   position: relative;
   border-radius: 30px;
@@ -302,6 +302,8 @@ footer .footer-container .opensource a:hover::before {
   color: transparent;
 }
 #myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-icon svg {
+  width: 100px;
+  height: 100px;
   --Jquery01: #e85d5f;
   --Typescript01: #e85d5f;
   --canva01: #e85d5f;
@@ -393,6 +395,7 @@ footer .footer-container .opensource a:hover::before {
   -o-border-image: linear-gradient(to right, #e8e65d, #e85d5f, #a05de8, #5d62e8) 1;
      border-image: linear-gradient(to right, #e8e65d, #e85d5f, #a05de8, #5d62e8) 1;
   border-image-slice: 1;
+  flex-basis: 5%;
 }
 #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container .project-skill-item {
   margin-bottom: 15px;
@@ -405,8 +408,15 @@ footer .footer-container .opensource a:hover::before {
 #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container .project-skill-item i:hover {
   color: #a05de8;
 }
+#portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container .project-skill-item svg {
+  width: 35px;
+  height: 35px;
+}
 #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container .project-skill-item svg:hover {
   fill: #a05de8;
+}
+#portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item #weather-skills {
+  margin-left: 40px;
 }
 #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-foto-container {
   width: 400px;
@@ -433,8 +443,8 @@ footer .footer-container .opensource a:hover::before {
   opacity: 0;
 }
 #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container {
-  width: 50%;
   margin-left: 50px;
+  flex-basis: 50%;
 }
 #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container h3 {
   font-size: 20px;
@@ -723,17 +733,13 @@ footer .footer-container .opensource a:hover::before {
   font-weight: 900;
   color: #e85d5f;
   font-family: "Protest Guerrilla", sans-serif;
-}
-#presentation-section .hero-container .hero h2 {
-  font-family: "Anta", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 #presentation-section .hero-container .hero p {
   font-size: 25px;
-  margin-top: 15px;
+  margin: 0px;
   font-family: "Anta", sans-serif;
+  width: 50%;
 }
 #presentation-section .hero-container .hero p span {
   background-image: linear-gradient(to right, #a05de8, #a05de8 50%, #e85d5f 50%);
@@ -762,4 +768,448 @@ footer .footer-container .opensource a:hover::before {
 }
 #presentation-section .hero-container .hero p span:hover::before {
   width: 100%;
+}
+
+@media (min-width: 1151px) and (max-width: 1550px) {
+  #presentation-section .hero-container .hero p {
+    width: 80%;
+  }
+}
+@media (min-width: 900px) and (max-width: 1150px) {
+  #presentation-section .hero-container .hero p {
+    width: 90%;
+  }
+  #aboutme-section .about-container .about-text p {
+    font-size: 20px;
+  }
+  #aboutme-section .about-container .about-photo {
+    height: 250px;
+  }
+  #myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-icon i {
+    font-size: 70px;
+  }
+  #myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-icon svg {
+    width: 70px;
+    height: 70px;
+  }
+  #myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-description {
+    font-size: 17px;
+  }
+  #portfolio-section .portfolio-container {
+    width: 65%;
+  }
+  #portfolio-section .portfolio-container p {
+    font-size: 18px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container .project-skill-item i {
+    font-size: 20px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container .project-skill-item svg {
+    width: 25px;
+    height: 25px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-foto-container {
+    width: 300px;
+    height: 300px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container h3 {
+    font-size: 25px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container .project-content-description .project-content-link {
+    width: 25%;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container .project-content-description .project-content-link i {
+    font-size: 20px;
+  }
+}
+@media (max-width: 899px) {
+  #portfolio-section .portfolio-container {
+    margin-top: 0px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container {
+    margin-top: 30px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item {
+    flex-direction: column;
+    position: relative;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container {
+    position: absolute;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item #pastas-skills {
+    left: 15px;
+    top: 20px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item #notes-skills {
+    left: 15px;
+    top: 30px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container {
+    margin: 50px 0px 0px 0px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container .project-content-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container .project-content-description .project-content-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    justify-content: space-between;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container #weather-project-item {
+    flex-direction: column-reverse;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container #weather-project-item #weather-skills {
+    left: 15px;
+    top: 30px;
+    margin: 0px;
+  }
+}
+@media (min-width: 630px) and (max-width: 899px) {
+  #presentation-section .hero-container .hero h1 {
+    font-size: 60px;
+  }
+  #presentation-section .hero-container .hero p {
+    font-size: 20px;
+    width: 100%;
+  }
+  .navbar-container .navbar-section-text {
+    padding: 35px 15px;
+    font-size: 15px;
+  }
+  .navbar-container .navbar-section-text .open-btn-ctnr {
+    padding: 15px;
+    right: 40px;
+  }
+  .navbar-container .navbar-section-text .menu-items {
+    padding: 80px 20px 20px 20px;
+  }
+  .navbar-container .navbar-section-text .menu-items .icon-close {
+    right: 40px;
+    top: 25px;
+  }
+  .navbar-container .navbar-section-text .icon-open,
+  .navbar-container .navbar-section-text .icon-close {
+    font-size: 25px;
+  }
+  .navbar-container .navbar-section-dice {
+    padding: 15px;
+    right: 45px;
+  }
+  .navbar-container .navbar-section-dice .items a .clickable {
+    font-size: 18px;
+  }
+  .navbar-container .navbar-section-dice .items a .rotate-scale-up {
+    font-size: 27px;
+  }
+  #aboutme-section .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #aboutme-section .about-container .about-text {
+    margin-bottom: 40px;
+  }
+  #aboutme-section .about-container .about-text h1 {
+    font-size: 47px;
+    margin-bottom: 50px;
+  }
+  #aboutme-section .about-container .about-text p {
+    font-size: 18px;
+  }
+  #aboutme-section .about-container .about-photo {
+    height: 300px;
+    width: 300px;
+    flex-basis: auto;
+    margin: 0px;
+  }
+  #myskill-section .myskill-container h1 {
+    font-size: 47px;
+    margin-bottom: 50px;
+  }
+  #myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-icon i {
+    font-size: 50px;
+  }
+  #myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-icon svg {
+    width: 50px;
+    height: 50px;
+  }
+  #myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-description {
+    font-size: 15px;
+  }
+  #portfolio-section .portfolio-container {
+    width: 60%;
+    margin-top: 0px;
+  }
+  #portfolio-section .portfolio-container h1 {
+    font-size: 47px;
+    margin-bottom: 50px;
+  }
+  #portfolio-section .portfolio-container p {
+    font-size: 16px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container {
+    margin-top: 50px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item {
+    margin-bottom: 60px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container .project-skill-item i {
+    font-size: 17px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container .project-skill-item svg {
+    width: 19px;
+    height: 19px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-foto-container {
+    width: 270px;
+    height: 270px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container h3 {
+    font-size: 22px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container .project-content-description .project-content-link i {
+    font-size: 20px;
+  }
+  #contact-section #contact-section-container {
+    width: 90%;
+    margin: 0px 10px 100px 10px;
+  }
+  #contact-section #contact-section-container h1 {
+    font-size: 47px;
+    margin-bottom: 50px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body {
+    width: 100%;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .info-contacts {
+    flex-basis: 20%;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .info-contacts a {
+    margin-bottom: 20px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .info-contacts a i {
+    font-size: 30px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .info-contacts #resume-button {
+    padding: 10px;
+    font-size: 15px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container {
+    width: 50%;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container h1 {
+    font-size: 20px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box label {
+    font-size: 14px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box input {
+    margin: 10px 0px 0px 0px;
+    font-size: 14px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box .personal-info {
+    margin-bottom: 20px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box .second-row-message {
+    margin-top: 10px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box .second-row-message .personal-message textarea {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button {
+    font-size: 12px;
+  }
+}
+@media (min-width: 430px) and (max-width: 629px) {
+  #presentation-section .hero-container .hero h1 {
+    font-size: 45px;
+  }
+  #presentation-section .hero-container .hero p {
+    font-size: 15px;
+    width: 100%;
+  }
+  .navbar-container .navbar-section-text {
+    padding: 25px 5px;
+    font-size: 12px;
+  }
+  .navbar-container .navbar-section-text .open-btn-ctnr {
+    padding: 10px;
+    right: 40px;
+  }
+  .navbar-container .navbar-section-text .menu-items {
+    padding: 60px 10px 10px 10px;
+  }
+  .navbar-container .navbar-section-text .menu-items .icon-close {
+    right: 30px;
+    top: 10px;
+  }
+  .navbar-container .navbar-section-text .icon-open,
+  .navbar-container .navbar-section-text .icon-close {
+    font-size: 20px;
+  }
+  .navbar-container .navbar-section-dice {
+    padding: 10px;
+    right: 40px;
+  }
+  .navbar-container .navbar-section-dice .items a .clickable {
+    font-size: 10px;
+  }
+  .navbar-container .navbar-section-dice .items a .rotate-scale-up {
+    font-size: 22px;
+  }
+  #aboutme-section .about-container {
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #aboutme-section .about-container .about-text {
+    margin-bottom: 30px;
+  }
+  #aboutme-section .about-container .about-text h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  #aboutme-section .about-container .about-text p {
+    font-size: 15px;
+  }
+  #aboutme-section .about-container .about-photo {
+    height: 200px;
+    width: 200px;
+    flex-basis: auto;
+    margin: 0px;
+  }
+  #myskill-section .myskill-container h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  #myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-icon i {
+    font-size: 30px;
+  }
+  #myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+  #myskill-section .myskill-container .skills-icon-container .skills-small-container .skills-icon-item .skill-description {
+    font-size: 12px;
+  }
+  #portfolio-section .portfolio-container {
+    width: 55%;
+  }
+  #portfolio-section .portfolio-container h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  #portfolio-section .portfolio-container p {
+    font-size: 14px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container {
+    margin-top: 40px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item {
+    margin-bottom: 40px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container {
+    padding: 5px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container .project-skill-item {
+    margin-bottom: 3px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container .project-skill-item i {
+    font-size: 14px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container .project-skill-item svg {
+    width: 15px;
+    height: 15px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item #pastas-skills {
+    left: -30px;
+    top: 10px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item #notes-skills {
+    left: -30px;
+    top: 10px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-foto-container {
+    width: 200px;
+    height: 200px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container h3 {
+    font-size: 18px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container .project-content-description .project-content-link i {
+    font-size: 18px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container #weather-project-item #weather-skills {
+    left: -25px;
+    top: 20px;
+  }
+  #contact-section #contact-section-container {
+    width: 100%;
+    margin: 0px 10px 80px 10px;
+  }
+  #contact-section #contact-section-container h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body {
+    width: 100%;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .info-contacts {
+    flex-basis: 10%;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .info-contacts a {
+    margin-bottom: 10px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .info-contacts a i {
+    font-size: 30px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .info-contacts #resume-button {
+    padding: 10px;
+    font-size: 15px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container {
+    width: 50%;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container h1 {
+    font-size: 20px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box label {
+    font-size: 14px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box input {
+    margin: 10px 0px 0px 0px;
+    font-size: 14px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box .personal-info {
+    margin-bottom: 20px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box .second-row-message {
+    margin-top: 10px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box .second-row-message .personal-message textarea {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button {
+    font-size: 12px;
+  }
+  footer {
+    padding-top: 20px;
+  }
+  footer .footer-container {
+    padding: 40px 30px;
+  }
+  footer .footer-container .opensource {
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -196,3 +196,34 @@
   border-right: 0px;
   border-top: 0px;
 }
+
+
+@mixin media-md {
+  @media (min-width: 430px) and (max-width: 629px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media (min-width: 630px) and (max-width: 899px) {
+    @content;
+  }
+}
+
+@mixin media-portfolio-899 {
+  @media (max-width: 899px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media (min-width: 900px) and (max-width: 1150px) {
+    @content;
+  }
+}
+
+@mixin media-title {
+  @media (min-width: 1151px) and (max-width: 1550px) {
+    @content;
+  }
+}

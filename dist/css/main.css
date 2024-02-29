@@ -1369,7 +1369,7 @@ footer .footer-container .opensource a:hover::before {
     margin-top: 30px;
   }
   #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item {
-    margin-bottom: 30px;
+    margin: 30px 0px;
     width: 90%;
   }
   #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-skills-container {

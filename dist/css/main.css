@@ -1394,8 +1394,8 @@ footer .footer-container .opensource a:hover::before {
     top: 0px;
   }
   #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-foto-container {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
   #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container h3 {
     font-size: 20px;

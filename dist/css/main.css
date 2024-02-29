@@ -1326,7 +1326,7 @@ footer .footer-container .opensource a:hover::before {
     margin-bottom: 30px;
   }
   #aboutme-section .about-container .about-text p {
-    font-size: 12px;
+    font-size: 15px;
   }
   #aboutme-section .about-container .about-photo {
     height: 150px;
@@ -1395,10 +1395,13 @@ footer .footer-container .opensource a:hover::before {
     height: 100px;
   }
   #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container h3 {
+    font-size: 20px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container p {
     font-size: 15px;
   }
   #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container .project-content-description .project-content-link i {
-    font-size: 15px;
+    font-size: 20px;
   }
   #portfolio-section .portfolio-container .portfolio-project-container #weather-project-item #weather-skills {
     left: 25px;

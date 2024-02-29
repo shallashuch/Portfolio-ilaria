@@ -739,7 +739,7 @@
           margin-bottom: 30px;
         }
         & p {
-          font-size: 12px;
+          font-size: 15px;
         }
       }
       & .about-photo {
@@ -822,12 +822,15 @@
           }
           & .project-content-container {
             & h3 {
+              font-size: 20px;
+            }
+            & p {
               font-size: 15px;
             }
             & .project-content-description {
               & .project-content-link {
                 & i {
-                  font-size: 15px;
+                  font-size: 20px;
                 }
               }
             }

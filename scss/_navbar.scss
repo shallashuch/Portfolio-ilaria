@@ -34,9 +34,11 @@
 
       & .menu-options-container {
         text-align: center;
-        & a {
-          @include underlinehoverText;
-          margin: 15px 0px;
+        & .items {
+          margin-bottom: 10px;
+          & a {
+            @include underlinehoverText;
+          }
         }
       }
     }

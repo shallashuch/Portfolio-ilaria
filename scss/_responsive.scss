@@ -1,3 +1,19 @@
+@include media-xxxl {
+  #contact-section {
+    #{&}-container {
+      & .contactme-container {
+        & .contact-body {
+          & .sendmessage-container {
+            & .message-box {  
+              width: 50%;
+            }
+          }  
+        }
+      }  
+    }
+  }
+}
+
 @include media-xxl {
   #presentation-section {
     & .hero-container {
@@ -21,6 +37,19 @@
           }
         }
       }
+    }
+  }
+  #contact-section {
+    #{&}-container {
+      & .contactme-container {
+        & .contact-body {
+          & .sendmessage-container {
+            & .message-box {  
+              width: 70%;
+            }
+          }  
+        }
+      }  
     }
   }
 }
@@ -111,6 +140,19 @@
           }
         }
       }
+    }
+  }
+  #contact-section {
+    #{&}-container {
+      & .contactme-container {
+        & .contact-body {
+          & .sendmessage-container {
+            & .message-box {  
+              width: 85%;
+            }
+          }  
+        }
+      }  
     }
   }
 }
@@ -330,6 +372,7 @@
       & h1 {
         font-size: 47px;
         margin-bottom: 50px;
+        margin-left: 60px;
       }
       & .contactme-container {
         & .contact-body {
@@ -351,8 +394,10 @@
             width: 50%;
             & h1 {
               font-size: 20px;
+              margin-left: 0px;
             }
-            & .message-box {   
+            & .message-box {  
+               width: 90%;
               & label {
                 font-size: 14px;
               } 
@@ -419,7 +464,7 @@
     }  
     & .navbar-section-dice {
       padding: 10px;
-      right: 40px;
+      right: 10px;
       & .items {
         & a {
           & .clickable {
@@ -436,6 +481,7 @@
   #aboutme-section {
     & .about-container {
       margin-bottom: 0px;
+      margin: 70px 20px 0px 20px;
       @include flexCenter(column);
       & .about-text {
         margin-bottom: 30px;
@@ -458,6 +504,7 @@
 
   #myskill-section {
     & .myskill-container {
+      margin: 70px 20px 0px 20px;
       & h1 {
         font-size: 30px;
         margin-bottom: 40px;
@@ -486,7 +533,8 @@
 
   #portfolio-section {
     & .portfolio-container {
-      width: 55%;
+      width: 70%;
+      margin: 70px 20px 0px 20px;
       & h1 {
         font-size: 30px;
         margin-bottom: 40px;
@@ -552,9 +600,11 @@
       & h1 {
         font-size: 30px;
         margin-bottom: 40px;
+        margin-left: 60px;
       }
       & .contactme-container {
         & .contact-body {
+          flex-direction: column-reverse;
           width: 100%;
           & .info-contacts {  
             flex-basis: 10%;
@@ -570,11 +620,14 @@
             }
           }
           & .sendmessage-container {
-            width: 50%;
+            width: 100%;
+            margin-bottom: 60px;
             & h1 {
               font-size: 20px;
+              margin-left: 0px;
             }
-            & .message-box {   
+            & .message-box { 
+                width: 80%;
               & label {
                 font-size: 14px;
               } 
@@ -587,6 +640,7 @@
               }
               & .second-row-message {
                 margin-top: 10px;
+              
               & .personal-message {
                 & textarea {
                   margin-top: 10px;
@@ -624,7 +678,7 @@
           font-size: 32px;
         }
         & p {
-          font-size: 12px;
+          font-size: 17px;
           width: 80%;
         }
       }
@@ -676,6 +730,7 @@
   #aboutme-section {
     & .about-container {
       margin-bottom: 0px;
+      margin: 70px 10px 0px 10px;
       @include flexCenter(column);
       & .about-text {
         margin-bottom: 20px;
@@ -708,15 +763,15 @@
           & .skills-icon-item {
             & .skill-icon {
               & i {
-                font-size: 40px;
+                font-size: 60px;
               }
               & svg {
-                width:40px; 
-                height: 40px;
+                width:60px; 
+                height: 60px;
               }
             }
             & .skill-description {
-              font-size: 15px;
+              font-size: 20px;
             }
           }
         }
@@ -726,7 +781,8 @@
 
   #portfolio-section {
     & .portfolio-container {
-      margin: 0px 120px 70px 120px;
+      margin: 0px 20px;
+      width: 75%;
       & h1 {
         font-size: 23px;
         margin-bottom: 30px;
@@ -753,12 +809,12 @@
             }
           }
           & #pastas-skills {
-            left: -30px;
-            top: -20px;
+            left: 30px;
+            top: 0px;
           }
           & #notes-skills {
-            left: -30px;
-            top: -20px;
+            left: 30px;
+            top: 0px;
           }
           & .project-foto-container {
             width: 100px;
@@ -779,8 +835,8 @@
         }
         & #weather-project-item {
           & #weather-skills {
-            left: -25px;
-            top: -10px;
+            left: 25px;
+            top: 0px;
           }
         }
       }
@@ -789,11 +845,11 @@
   #contact-section {
     #{&}-container {
       width: 100%;
-      margin: 0px;
-      margin-bottom: 50px;
+      margin: 40px 0px 50px 0px;
       & h1 {
         font-size: 20px;
         margin:0px 0px 30px 120px;
+        margin-left: 50px;
       }
       & .contactme-container {
         & .contact-body {
@@ -814,7 +870,6 @@
           & .sendmessage-container {
             width: 80%;
             margin-bottom: 50px;
-            align-items: flex-start;
             & h1 {
               font-size: 20px;
               margin-left: 0px;
@@ -822,6 +877,8 @@
             }
             & .message-box {  
               margin-top: 20px; 
+              width: 100%;
+
               & label {
                 font-size: 14px;
               } 
@@ -829,8 +886,11 @@
                 margin: 10px 0px 0px 0px;
                 font-size: 14px;
               }  
-              & .personal-info {
-                margin-bottom: 20px;
+              & .first-row-personal-info {
+                flex-direction: column;
+                & .personal-info {
+                  margin-bottom: 20px;
+                }
               }
               & .second-row-message {
                 margin-top: 10px;

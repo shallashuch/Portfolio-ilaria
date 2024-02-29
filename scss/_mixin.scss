@@ -87,6 +87,43 @@
   }
 }
 
+@mixin underlinehoverText-PresentationSection {
+  background-image: linear-gradient(
+    to right,
+    $colorYellow,
+    $colorYellow 50%,
+    $colorRed 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  background-clip: text;
+
+  &:before {
+    content: '';
+    background: $colorViolet;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    background-position: 0;
+
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
 
 @mixin icon-hover {
   color: $colorRed;
@@ -235,6 +272,12 @@
 
 @mixin media-xxl {
   @media (min-width: 1151px) and (max-width: 1550px) {
+    @content;
+  }
+}
+
+@mixin media-xxxl {
+  @media (min-width: 1551px) and (max-width: 1900px) {
     @content;
   }
 }

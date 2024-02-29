@@ -1387,11 +1387,11 @@ footer .footer-container .opensource a:hover::before {
   }
   #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item #pastas-skills {
     left: 30px;
-    top: 0px;
+    top: 10px;
   }
   #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item #notes-skills {
     left: 30px;
-    top: 0px;
+    top: 10px;
   }
   #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-foto-container {
     width: 150px;
@@ -1404,11 +1404,11 @@ footer .footer-container .opensource a:hover::before {
     font-size: 15px;
   }
   #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container .project-content-description .project-content-link i {
-    font-size: 40px;
+    font-size: 30px;
   }
   #portfolio-section .portfolio-container .portfolio-project-container #weather-project-item #weather-skills {
     left: 25px;
-    top: 0px;
+    top: 10px;
   }
   #contact-section #contact-section-container {
     width: 100%;

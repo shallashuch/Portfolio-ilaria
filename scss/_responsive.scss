@@ -675,10 +675,10 @@
     & .hero-container {
       & .hero {
         & h1 {
-          font-size: 32px;
+          font-size: 40px;
         }
         & p {
-          font-size: 17px;
+          font-size: 20px;
           width: 80%;
         }
       }
@@ -687,7 +687,7 @@
   .navbar-container{
     .navbar-section-text {
       padding: 25px 5px;
-      font-size: 12px;
+      font-size: 15px;
       & .logo {
         svg {
           height: 20px;
@@ -735,7 +735,7 @@
       & .about-text {
         margin-bottom: 20px;
         & h1 {
-          font-size: 23px;
+          font-size: 30px;
           margin-bottom: 30px;
         }
         & p {
@@ -753,8 +753,9 @@
 
   #myskill-section {
     & .myskill-container {
+      margin: 70px 10px 0px 10px;
       & h1 {
-        font-size: 23px;
+        font-size: 30px;
         margin-bottom: 30px;
       }
       & .skills-icon-container {
@@ -781,14 +782,14 @@
 
   #portfolio-section {
     & .portfolio-container {
-      margin: 0px 20px;
+      margin: 0px 10px;
       width: 75%;
       & h1 {
-        font-size: 23px;
+        font-size: 30px;
         margin-bottom: 30px;
       }
       & p {
-        font-size: 12px;
+        font-size: 15px;
       }
       & .portfolio-project-container {
         margin-top: 30px;
@@ -830,7 +831,7 @@
             & .project-content-description {
               & .project-content-link {
                 & i {
-                  font-size: 20px;
+                  font-size: 40px;
                 }
               }
             }

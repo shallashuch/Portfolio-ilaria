@@ -612,27 +612,29 @@
             <div class="sendmessage-container">
               <h1>Get in touch!</h1>
               <div class="container message-box">
-                <div class="row first-row-personal-info">
-                  <div class="col-lg-6 col-md-12 personal-info">
-                    <label for="name">Your name</label>
-                    <input type="text" placeholder="Enter your name">
+                <form name="contact" method="POST" data-netlify="true">
+                  <div class="row first-row-personal-info">
+                    <div class="col-lg-6 col-md-12 personal-info">
+                      <label for="name">Your name</label>
+                      <input type="text" name="name" placeholder="Enter your name">
+                    </div>
+                    <div class="col-lg-6 col-md-12 personal-info">
+                      <label for="email">Email address</label>
+                      <input type="email" name="email" placeholder="Enter your email address">
+                    </div>
                   </div>
-                  <div class="col-lg-6 col-md-12 personal-info">
-                    <label for="email">Email address</label>
-                    <input type="email" placeholder="Enter your email address">
+                  <div class="row second-row-message">
+                    <div class="col-12 personal-message">
+                      <label for="message">Your message</label>
+                      <textarea name="message" rows="2" placeholder="Write here your message..."></textarea>
+                    </div>
                   </div>
-                </div>
-                <div class="row second-row-message">
-                  <div class="col-12 personal-message">
-                    <label for="message">Your message</label>
-                    <textarea name="message" rows="2" placeholder="Write here your message..."></textarea>
-                  </div>
-                </div>
-                <a href="#" target="_blank" id="send-message">
-                  <button id="send-message-button">
-                    Send
-                  </button>
-                </a>
+                  <a href="#" target="_blank" id="send-message">
+                    <button id="send-message-button" type="submit">
+                      Send
+                    </button>
+                  </a>
+                </form> 
               </div>
             </div>      
           </div>

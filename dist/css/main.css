@@ -606,26 +606,29 @@ footer .footer-container .opensource a:hover::before {
   color: #e85d5f;
 }
 #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box {
+  margin-top: 40px;
+  width: 40%;
+}
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
-  width: 40%;
+  width: 100%;
 }
-#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box label {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box form label {
   color: #5d62e8;
   font-weight: bold;
 }
-#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box .second-row-message {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box form .second-row-message {
   width: 100%;
   margin-top: 40px;
 }
-#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box .second-row-message .personal-message {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box form .second-row-message .personal-message {
   display: flex;
   flex-direction: column;
 }
-#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box .second-row-message .personal-message textarea {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box form .second-row-message .personal-message textarea {
   margin-top: 20px;
   background-color: #e8ecf5;
   border-bottom: 1px solid #5d62e8;
@@ -633,17 +636,17 @@ footer .footer-container .opensource a:hover::before {
   border-right: 0px;
   border-top: 0px;
 }
-#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box .first-row-personal-info {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box form .first-row-personal-info {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box .first-row-personal-info .personal-info {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box form .first-row-personal-info .personal-info {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box .first-row-personal-info .personal-info input {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box form .first-row-personal-info .personal-info input {
   display: block;
   margin: 20px 0px 0px 0px;
   background-color: #e8ecf5;
@@ -652,7 +655,7 @@ footer .footer-container .opensource a:hover::before {
   border-right: 0px;
   border-top: 0px;
 }
-#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box form #send-message-button {
   box-shadow: inset 0 0 0 4px #e85d5f;
   color: #e85d5f;
   transition: color 0.25s 0.0833333333s;
@@ -666,7 +669,7 @@ footer .footer-container .opensource a:hover::before {
   margin-top: 30px;
   font-size: 15px;
 }
-#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button::before, #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button::after {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box form #send-message-button::before, #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box form #send-message-button::after {
   border: 0 solid transparent;
   box-sizing: border-box;
   content: "";
@@ -678,30 +681,30 @@ footer .footer-container .opensource a:hover::before {
   bottom: 0;
   right: 0;
 }
-#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button::before {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box form #send-message-button::before {
   border-bottom-width: 4px;
   border-left-width: 4px;
 }
-#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button::after {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box form #send-message-button::after {
   border-top-width: 4px;
   border-right-width: 4px;
 }
-#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button:hover {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box form #send-message-button:hover {
   color: #a05de8;
 }
-#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button:hover::before, #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button:hover::after {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box form #send-message-button:hover::before, #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box form #send-message-button:hover::after {
   border-color: #a05de8;
   transition: border-color 0s, width 0.25s, height 0.25s;
   width: 100%;
   height: 100%;
 }
-#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button:hover::before {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box form #send-message-button:hover::before {
   transition-delay: 0s, 0s, 0.25s;
 }
-#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button:hover::after {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box form #send-message-button:hover::after {
   transition-delay: 0s, 0.25s, 0s;
 }
-#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box #send-message-button:focus {
+#contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box form #send-message-button:focus {
   outline: 2px solid #a05de8;
 }
 

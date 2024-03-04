@@ -62,61 +62,65 @@
           }
     
           & .message-box {
-            @include flexCenter(column);
             margin-top: 40px;
             width: 40%;
-    
-            & label {
-              color: $colorBluette;
-              font-weight: bold;
-            }
-    
-            & .second-row-message {
+
+            & form {
+              @include flexCenter(column);
               width: 100%;
-              margin-top: 40px;
-    
-              & .personal-message {
-                display: flex;
-                flex-direction: column;
-    
-                & textarea {
-                  margin-top: 20px;
-                  @include input;
-                }
-              }
-            }
-    
-            & .first-row-personal-info {
-              display: flex;
-              justify-content: space-between;
-              width: 100%;
-    
-              & .personal-info {
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-    
-                & input {
-                  display: block;
-                  margin: 20px 0px 0px 0px;
-                  @include input;
-                }
-              }
-            }
-    
-            & #send-message-button {
-              @include btn-border-drawing(#e85d5f, #a05de8, 4px, bottom, right);
-              background: none;
-              border: none;
-              cursor: pointer;
-              padding: 10px;
-              border-radius: 10px;
-              margin-top: 30px;
-              font-size: 15px;
               
-              &:focus { 
-                outline: 2px solid #a05de8; 
+              & label {
+                color: $colorBluette;
+                font-weight: bold;
               }
+      
+              & .second-row-message {
+                width: 100%;
+                margin-top: 40px;
+      
+                & .personal-message {
+                  display: flex;
+                  flex-direction: column;
+      
+                  & textarea {
+                    margin-top: 20px;
+                    @include input;
+                  }
+                }
+              }
+      
+              & .first-row-personal-info {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+      
+                & .personal-info {
+                  display: flex;
+                  justify-content: center;
+                  flex-direction: column;
+      
+                  & input {
+                    display: block;
+                    margin: 20px 0px 0px 0px;
+                    @include input;
+                  }
+                }
+              }
+      
+              & #send-message-button {
+                @include btn-border-drawing(#e85d5f, #a05de8, 4px, bottom, right);
+                background: none;
+                border: none;
+                cursor: pointer;
+                padding: 10px;
+                border-radius: 10px;
+                margin-top: 30px;
+                font-size: 15px;
+                
+                &:focus { 
+                  outline: 2px solid #a05de8; 
+                }
+              }  
             }
           }
         }  

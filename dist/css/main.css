@@ -645,6 +645,7 @@ footer .footer-container .opensource a:hover::before {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  max-width: 50%;
 }
 #contact-section #contact-section-container .contactme-container .contact-body .sendmessage-container .message-box form .first-row-personal-info .personal-info input {
   display: block;

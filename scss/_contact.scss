@@ -68,7 +68,7 @@
             & form {
               @include flexCenter(column);
               width: 100%;
-              
+
               & label {
                 color: $colorBluette;
                 font-weight: bold;
@@ -98,6 +98,7 @@
                   display: flex;
                   justify-content: center;
                   flex-direction: column;
+                  max-width: 50%;
       
                   & input {
                     display: block;

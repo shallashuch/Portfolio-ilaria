@@ -4,12 +4,12 @@
       & .contactme-container {
         & .contact-body {
           & .sendmessage-container {
-            & .message-box {  
+            & .message-box {
               width: 50%;
             }
-          }  
+          }
         }
-      }  
+      }
     }
   }
 }
@@ -44,12 +44,12 @@
       & .contactme-container {
         & .contact-body {
           & .sendmessage-container {
-            & .message-box {  
+            & .message-box {
               width: 70%;
             }
-          }  
+          }
         }
-      }  
+      }
     }
   }
 }
@@ -89,7 +89,7 @@
                 font-size: 70px;
               }
               & svg {
-                width:70px; 
+                width: 70px;
                 height: 70px;
               }
             }
@@ -147,12 +147,12 @@
       & .contactme-container {
         & .contact-body {
           & .sendmessage-container {
-            & .message-box {  
+            & .message-box {
               width: 85%;
             }
-          }  
+          }
         }
-      }  
+      }
     }
   }
 }
@@ -179,6 +179,10 @@
             left: 15px;
             top: 30px;
           }
+          & #homebulbs-skills {
+            left: 15px;
+            top: 30px;
+          }
           & .project-content-container {
             margin: 50px 0px 0px 0px;
           }
@@ -197,6 +201,14 @@
         & #weather-project-item {
           flex-direction: column-reverse;
           & #weather-skills {
+            left: 15px;
+            top: 30px;
+            margin: 0px;
+          }
+        }
+        & #listinghouse-project-item {
+          flex-direction: column-reverse;
+          & #listinghouse-skills {
             left: 15px;
             top: 30px;
             margin: 0px;
@@ -233,7 +245,7 @@
       }
     }
   }
-  .navbar-container{
+  .navbar-container {
     .navbar-section-text {
       padding: 35px 15px;
       font-size: 15px;
@@ -242,17 +254,17 @@
         right: 40px;
       }
       & .menu-items {
-        padding: 80px 20px 20px 20px;  
+        padding: 80px 20px 20px 20px;
         & .icon-close {
           right: 40px;
-          top:25px;
+          top: 25px;
         }
       }
       .icon-open,
       .icon-close {
         font-size: 25px;
       }
-    }  
+    }
     & .navbar-section-dice {
       padding: 15px;
       right: 45px;
@@ -306,7 +318,7 @@
                 font-size: 50px;
               }
               & svg {
-                width:50px; 
+                width: 50px;
                 height: 50px;
               }
             }
@@ -377,14 +389,14 @@
       & .contactme-container {
         & .contact-body {
           width: 100%;
-          & .info-contacts {  
+          & .info-contacts {
             flex-basis: 20%;
             & a {
               margin-bottom: 20px;
               & i {
                 font-size: 30px;
               }
-            } 
+            }
             & #resume-button {
               padding: 10px;
               font-size: 15px;
@@ -396,34 +408,34 @@
               font-size: 20px;
               margin-left: 0px;
             }
-            & .message-box {  
-               width: 90%;
+            & .message-box {
+              width: 90%;
               & label {
                 font-size: 14px;
-              } 
+              }
               & input {
                 margin: 10px 0px 0px 0px;
                 font-size: 14px;
-              }  
+              }
               & .personal-info {
                 margin-bottom: 20px;
               }
               & .second-row-message {
                 margin-top: 10px;
-              & .personal-message {
-                & textarea {
-                  margin-top: 10px;
-                  font-size: 14px;
+                & .personal-message {
+                  & textarea {
+                    margin-top: 10px;
+                    font-size: 14px;
+                  }
                 }
-              }
               }
               & #send-message-button {
                 font-size: 12px;
               }
             }
-          }  
+          }
         }
-      }  
+      }
     }
   }
 }
@@ -442,7 +454,7 @@
       }
     }
   }
-  .navbar-container{
+  .navbar-container {
     .navbar-section-text {
       padding: 25px 5px;
       font-size: 12px;
@@ -451,17 +463,17 @@
         right: 40px;
       }
       & .menu-items {
-        padding: 60px 10px 10px 10px;  
+        padding: 60px 10px 10px 10px;
         & .icon-close {
           right: 30px;
-          top:10px;
+          top: 10px;
         }
       }
       .icon-open,
       .icon-close {
         font-size: 20px;
       }
-    }  
+    }
     & .navbar-section-dice {
       padding: 10px;
       right: 10px;
@@ -518,7 +530,7 @@
                 font-size: 30px;
               }
               & svg {
-                width:30px; 
+                width: 30px;
                 height: 30px;
               }
             }
@@ -567,6 +579,10 @@
             left: -30px;
             top: 10px;
           }
+          & #homebulbs-skills {
+            left: -30px;
+            top: 10px;
+          }
           & .project-foto-container {
             width: 200px;
             height: 200px;
@@ -590,6 +606,12 @@
             top: 20px;
           }
         }
+        & #listinghouse-project-item {
+          & #listinghouse-skills {
+            left: -25px;
+            top: 20px;
+          }
+        }
       }
     }
   }
@@ -606,14 +628,14 @@
         & .contact-body {
           flex-direction: column-reverse;
           width: 100%;
-          & .info-contacts {  
+          & .info-contacts {
             flex-basis: 10%;
             & a {
               margin-bottom: 10px;
               & i {
                 font-size: 30px;
               }
-            } 
+            }
             & #resume-button {
               padding: 10px;
               font-size: 15px;
@@ -626,35 +648,35 @@
               font-size: 20px;
               margin-left: 0px;
             }
-            & .message-box { 
-                width: 80%;
+            & .message-box {
+              width: 80%;
               & label {
                 font-size: 14px;
-              } 
+              }
               & input {
                 margin: 10px 0px 0px 0px;
                 font-size: 14px;
-              }  
+              }
               & .personal-info {
                 margin-bottom: 20px;
               }
               & .second-row-message {
                 margin-top: 10px;
-              
-              & .personal-message {
-                & textarea {
-                  margin-top: 10px;
-                  font-size: 14px;
+
+                & .personal-message {
+                  & textarea {
+                    margin-top: 10px;
+                    font-size: 14px;
+                  }
                 }
-              }
               }
               & #send-message-button {
                 font-size: 12px;
               }
             }
-          }  
+          }
         }
-      }  
+      }
     }
   }
 
@@ -684,7 +706,7 @@
       }
     }
   }
-  .navbar-container{
+  .navbar-container {
     .navbar-section-text {
       padding: 25px 5px;
       font-size: 15px;
@@ -699,18 +721,18 @@
         right: 10px;
       }
       & .menu-items {
-        padding: 60px 5px 10px 5px; 
+        padding: 60px 5px 10px 5px;
         right: -2px;
         & .icon-close {
           right: 20px;
-          top:5px;
+          top: 5px;
         }
       }
       .icon-open,
       .icon-close {
         font-size: 20px;
       }
-    }  
+    }
     & .navbar-section-dice {
       padding: 5px;
       right: 10px;
@@ -767,7 +789,7 @@
                 font-size: 60px;
               }
               & svg {
-                width:60px; 
+                width: 60px;
                 height: 60px;
               }
             }
@@ -817,6 +839,10 @@
             left: 30px;
             top: 10px;
           }
+          & #homebulbs-skills {
+            left: 30px;
+            top: 10px;
+          }
           & .project-foto-container {
             width: 150px;
             height: 150px;
@@ -843,6 +869,12 @@
             top: 10px;
           }
         }
+        & #listinghouse-project-item {
+          & #listinghouse-skills {
+            left: 25px;
+            top: 10px;
+          }
+        }
       }
     }
   }
@@ -852,20 +884,20 @@
       margin: 40px 0px 50px 0px;
       & h1 {
         font-size: 20px;
-        margin:0px 0px 30px 120px;
+        margin: 0px 0px 30px 120px;
         margin-left: 50px;
       }
       & .contactme-container {
         & .contact-body {
           flex-direction: column-reverse;
           width: 100%;
-          & .info-contacts {  
+          & .info-contacts {
             & a {
               margin-bottom: 10px;
               & i {
                 font-size: 20px;
               }
-            } 
+            }
             & #resume-button {
               padding: 10px;
               font-size: 15px;
@@ -879,17 +911,17 @@
               margin-left: 0px;
               text-align: start;
             }
-            & .message-box {  
-              margin-top: 20px; 
+            & .message-box {
+              margin-top: 20px;
               width: 100%;
 
               & label {
                 font-size: 14px;
-              } 
+              }
               & input {
                 margin: 10px 0px 0px 0px;
                 font-size: 14px;
-              }  
+              }
               & .first-row-personal-info {
                 flex-direction: column;
                 & .personal-info {
@@ -898,20 +930,20 @@
               }
               & .second-row-message {
                 margin-top: 10px;
-              & .personal-message {
-                & textarea {
-                  margin-top: 10px;
-                  font-size: 14px;
+                & .personal-message {
+                  & textarea {
+                    margin-top: 10px;
+                    font-size: 14px;
+                  }
                 }
-              }
               }
               & #send-message-button {
                 font-size: 12px;
               }
             }
-          }  
+          }
         }
-      }  
+      }
     }
   }
 

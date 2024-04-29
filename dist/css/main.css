@@ -886,6 +886,10 @@ footer .footer-container .opensource a:hover::before {
     left: 15px;
     top: 30px;
   }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item #homebulbs-skills {
+    left: 15px;
+    top: 30px;
+  }
   #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-content-container {
     margin: 50px 0px 0px 0px;
   }
@@ -907,6 +911,14 @@ footer .footer-container .opensource a:hover::before {
     flex-direction: column-reverse;
   }
   #portfolio-section .portfolio-container .portfolio-project-container #weather-project-item #weather-skills {
+    left: 15px;
+    top: 30px;
+    margin: 0px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container #listinghouse-project-item {
+    flex-direction: column-reverse;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container #listinghouse-project-item #listinghouse-skills {
     left: 15px;
     top: 30px;
     margin: 0px;
@@ -1202,6 +1214,10 @@ footer .footer-container .opensource a:hover::before {
     left: -30px;
     top: 10px;
   }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item #homebulbs-skills {
+    left: -30px;
+    top: 10px;
+  }
   #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-foto-container {
     width: 200px;
     height: 200px;
@@ -1213,6 +1229,10 @@ footer .footer-container .opensource a:hover::before {
     font-size: 18px;
   }
   #portfolio-section .portfolio-container .portfolio-project-container #weather-project-item #weather-skills {
+    left: -25px;
+    top: 20px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container #listinghouse-project-item #listinghouse-skills {
     left: -25px;
     top: 20px;
   }
@@ -1409,6 +1429,10 @@ footer .footer-container .opensource a:hover::before {
     left: 30px;
     top: 10px;
   }
+  #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item #homebulbs-skills {
+    left: 30px;
+    top: 10px;
+  }
   #portfolio-section .portfolio-container .portfolio-project-container .portfolio-project-item .project-foto-container {
     width: 150px;
     height: 150px;
@@ -1423,6 +1447,10 @@ footer .footer-container .opensource a:hover::before {
     font-size: 30px;
   }
   #portfolio-section .portfolio-container .portfolio-project-container #weather-project-item #weather-skills {
+    left: 25px;
+    top: 10px;
+  }
+  #portfolio-section .portfolio-container .portfolio-project-container #listinghouse-project-item #listinghouse-skills {
     left: 25px;
     top: 10px;
   }
